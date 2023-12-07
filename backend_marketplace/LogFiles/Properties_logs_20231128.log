@@ -1,0 +1,722 @@
+[28/11/2023 05:28:00 p. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[28/11/2023 05:28:00 p. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[28/11/2023 05:28:00 p. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[28/11/2023 05:28:00 p. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[28/11/2023 05:28:00 p. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Users\INTECH\source\Workspaces\Finatrategy\Dev\Ticket 193510 - Marketplace update estatus vendido\Src\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[28/11/2023 05:30:20 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/login/logout"
+StatusCode = 204
+Elapsed = 5.2568
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:30:21 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/propertytype"
+StatusCode = 204
+Elapsed = 1.0459
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:30:21 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/properties/range"
+StatusCode = 204
+Elapsed = 0.0641
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:30:28 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "POST"
+RequestPath = "/api/login/logout"
+StatusCode = 400
+Elapsed = 7972.8411
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:30:28 p. m. -06:00] Information: "result: System.Collections.Generic.List`1[<>f__AnonymousType0`2[System.Int32,System.String]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "0ceeab19-28b6-4e35-9723-ee3cdc9cb9eb"
+ActionName = "backend_marketplace.Controllers.FiltersController.PropertyType (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000003"
+RequestPath = "/api/filters/propertytype"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:30:28 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/propertytype"
+StatusCode = 200
+Elapsed = 7701.9452
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:30:31 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/states"
+StatusCode = 204
+Elapsed = 0.0754
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:30:31 p. m. -06:00] Information: "result: System.Collections.Generic.List`1[<>f__AnonymousType0`2[System.Int32,System.String]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "c1654348-9621-4034-b116-253ad3bc86dd"
+ActionName = "backend_marketplace.Controllers.FiltersController.States (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000007"
+RequestPath = "/api/filters/states"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:30:31 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/states"
+StatusCode = 200
+Elapsed = 78.6412
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:30:31 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/bedrooms"
+StatusCode = 204
+Elapsed = 0.1915
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:30:31 p. m. -06:00] Information: "result: System.Linq.Enumerable+SelectRangeIterator`1[<>f__AnonymousType0`2[System.Int32,System.Int32]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "140d8e86-f9af-478d-a83a-efe7562dc2ff"
+ActionName = "backend_marketplace.Controllers.FiltersController.Bedrooms (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000009"
+RequestPath = "/api/filters/bedrooms"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:30:31 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/bedrooms"
+StatusCode = 200
+Elapsed = 20.7131
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:30:31 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/fullbathrooms"
+StatusCode = 204
+Elapsed = 0.066
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:30:31 p. m. -06:00] Information: "result: System.Linq.Enumerable+SelectRangeIterator`1[<>f__AnonymousType0`2[System.Int32,System.Int32]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "fabef8a7-83bf-40a8-836d-5942966b8cae"
+ActionName = "backend_marketplace.Controllers.FiltersController.FullBathrooms (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:0000000B"
+RequestPath = "/api/filters/fullbathrooms"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:30:31 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/fullbathrooms"
+StatusCode = 200
+Elapsed = 7.6987
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:30:33 p. m. -06:00] Information: "Propiedad no encontrada en isi 2111"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000005"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:31:55 p. m. -06:00] Information: "Propiedad no encontrada en isi 9825334713"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000005"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:31:56 p. m. -06:00] Information: "Propiedad no encontrada en isi 3980523"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000005"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:31:58 p. m. -06:00] Information: "Propiedad no encontrada en isi 5108553"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000005"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:32:00 p. m. -06:00] Information: "Propiedad no encontrada en isi 6596680"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000005"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:32:53 p. m. -06:00] Error: "Response status code does not indicate success: 422 (Unprocessable Entity)."
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000005"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:32:53 p. m. -06:00] Error: "Response status code does not indicate success: 422 (Unprocessable Entity)."
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000005"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:32:53 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/properties/range"
+StatusCode = 200
+Elapsed = 151967.1609
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:35:27 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/login/logout"
+StatusCode = 204
+Elapsed = 0.0785
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:35:27 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "POST"
+RequestPath = "/api/login/logout"
+StatusCode = 400
+Elapsed = 11.1769
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:35:31 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/propertytype"
+StatusCode = 204
+Elapsed = 0.0622
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:35:31 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/properties/range"
+StatusCode = 204
+Elapsed = 0.2192
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:35:32 p. m. -06:00] Information: "result: System.Collections.Generic.List`1[<>f__AnonymousType0`2[System.Int32,System.String]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "0ceeab19-28b6-4e35-9723-ee3cdc9cb9eb"
+ActionName = "backend_marketplace.Controllers.FiltersController.PropertyType (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:0000000F"
+RequestPath = "/api/filters/propertytype"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:35:32 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/propertytype"
+StatusCode = 200
+Elapsed = 52.3529
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:35:32 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/states"
+StatusCode = 204
+Elapsed = 0.0626
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:35:32 p. m. -06:00] Information: "result: System.Collections.Generic.List`1[<>f__AnonymousType0`2[System.Int32,System.String]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "c1654348-9621-4034-b116-253ad3bc86dd"
+ActionName = "backend_marketplace.Controllers.FiltersController.States (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000013"
+RequestPath = "/api/filters/states"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:35:32 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/states"
+StatusCode = 200
+Elapsed = 71.4129
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:35:34 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/bedrooms"
+StatusCode = 204
+Elapsed = 0.0593
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:35:34 p. m. -06:00] Information: "result: System.Linq.Enumerable+SelectRangeIterator`1[<>f__AnonymousType0`2[System.Int32,System.Int32]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "140d8e86-f9af-478d-a83a-efe7562dc2ff"
+ActionName = "backend_marketplace.Controllers.FiltersController.Bedrooms (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000015"
+RequestPath = "/api/filters/bedrooms"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:35:34 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/bedrooms"
+StatusCode = 200
+Elapsed = 1.028
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:35:34 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/fullbathrooms"
+StatusCode = 204
+Elapsed = 0.0859
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:35:34 p. m. -06:00] Information: "result: System.Linq.Enumerable+SelectRangeIterator`1[<>f__AnonymousType0`2[System.Int32,System.Int32]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "fabef8a7-83bf-40a8-836d-5942966b8cae"
+ActionName = "backend_marketplace.Controllers.FiltersController.FullBathrooms (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000017"
+RequestPath = "/api/filters/fullbathrooms"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:35:34 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/fullbathrooms"
+StatusCode = 200
+Elapsed = 1.0581
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:35:37 p. m. -06:00] Information: "Propiedad no encontrada en isi 2111"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000011"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:35:54 p. m. -06:00] Error: "Response status code does not indicate success: 422 (Unprocessable Entity)."
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000011"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:35:54 p. m. -06:00] Error: "Response status code does not indicate success: 422 (Unprocessable Entity)."
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000011"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:35:56 p. m. -06:00] Information: "Propiedad no encontrada en isi 9825334713"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000011"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:35:58 p. m. -06:00] Information: "Propiedad no encontrada en isi 3980523"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000011"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:36:00 p. m. -06:00] Information: "Propiedad no encontrada en isi 5108553"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000011"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:36:01 p. m. -06:00] Error: "Response status code does not indicate success: 422 (Unprocessable Entity)."
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000011"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:36:01 p. m. -06:00] Error: "Response status code does not indicate success: 422 (Unprocessable Entity)."
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000011"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:36:54 p. m. -06:00] Information: "Propiedad no encontrada en isi 6655555"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000011"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:36:54 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/properties/range"
+StatusCode = 200
+Elapsed = 82927.9147
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:37:07 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/properties/details"
+StatusCode = 204
+Elapsed = 0.0523
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:37:09 p. m. -06:00] Information: "result: { creditnumber = 13319, title = Cesión de derechos, rooms = 2, halfbathrooms = 2, bathrooms = 2, description = prueba de usuario aaaaaaa, lotsize = 1222, constructionsize = 1222, parkingspaces = 2, price = 100000, type = Casa, favorite = False, postcode = 88740, street = Sdfasdfasdf, extnumber = 111, intnumber = null, settlement = Dfasdfasdfasd, address2 = Sdfasdfasdf 111 Null, address = Dfasdfasdfasd, 88740 Comondú, Baja California Sur., latitude = 100, longitude = 100, state = Baja California Sur, city = Comondú, photos = System.Collections.Generic.List`1[<>f__AnonymousType3`3[System.String,System.String,System.String]], sold = False }"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "566e0c11-028a-4159-87ab-cc76298eec31"
+ActionName = "backend_marketplace.Controllers.PropertiesController.Details (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000019"
+RequestPath = "/api/properties/details"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:37:09 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/properties/details"
+StatusCode = 200
+Elapsed = 1787.5883
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:37:09 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/antiforgery"
+StatusCode = 204
+Elapsed = 0.0716
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:37:10 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/antiforgery"
+StatusCode = 200
+Elapsed = 438.3117
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:38:00 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/propertytype"
+StatusCode = 204
+Elapsed = 0.0816
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:38:00 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/properties/range"
+StatusCode = 204
+Elapsed = 11.5532
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:38:00 p. m. -06:00] Information: "result: System.Collections.Generic.List`1[<>f__AnonymousType0`2[System.Int32,System.String]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "0ceeab19-28b6-4e35-9723-ee3cdc9cb9eb"
+ActionName = "backend_marketplace.Controllers.FiltersController.PropertyType (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:0000001D"
+RequestPath = "/api/filters/propertytype"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:38:00 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/propertytype"
+StatusCode = 200
+Elapsed = 53.7655
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:38:00 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/states"
+StatusCode = 204
+Elapsed = 0.0866
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:38:00 p. m. -06:00] Information: "result: System.Collections.Generic.List`1[<>f__AnonymousType0`2[System.Int32,System.String]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "c1654348-9621-4034-b116-253ad3bc86dd"
+ActionName = "backend_marketplace.Controllers.FiltersController.States (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000021"
+RequestPath = "/api/filters/states"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:38:00 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/states"
+StatusCode = 200
+Elapsed = 59.3849
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:38:00 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/bedrooms"
+StatusCode = 204
+Elapsed = 0.0948
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:38:00 p. m. -06:00] Information: "result: System.Linq.Enumerable+SelectRangeIterator`1[<>f__AnonymousType0`2[System.Int32,System.Int32]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "140d8e86-f9af-478d-a83a-efe7562dc2ff"
+ActionName = "backend_marketplace.Controllers.FiltersController.Bedrooms (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000023"
+RequestPath = "/api/filters/bedrooms"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:38:00 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/bedrooms"
+StatusCode = 200
+Elapsed = 0.7749
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:38:00 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/fullbathrooms"
+StatusCode = 204
+Elapsed = 0.069
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:38:00 p. m. -06:00] Information: "result: System.Linq.Enumerable+SelectRangeIterator`1[<>f__AnonymousType0`2[System.Int32,System.Int32]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "fabef8a7-83bf-40a8-836d-5942966b8cae"
+ActionName = "backend_marketplace.Controllers.FiltersController.FullBathrooms (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000025"
+RequestPath = "/api/filters/fullbathrooms"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:38:00 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/fullbathrooms"
+StatusCode = 200
+Elapsed = 12.2726
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:38:03 p. m. -06:00] Information: "Propiedad no encontrada en isi 2111"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:0000001F"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:38:54 p. m. -06:00] Information: "Propiedad no encontrada en isi 9825334713"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:0000001F"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:38:55 p. m. -06:00] Information: "Propiedad no encontrada en isi 3980523"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:0000001F"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:38:57 p. m. -06:00] Information: "Propiedad no encontrada en isi 5108553"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:0000001F"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:38:58 p. m. -06:00] Information: "Propiedad no encontrada en isi 6596680"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:0000001F"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:39:52 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/properties/range"
+StatusCode = 200
+Elapsed = 112335.4511
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:50:23 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/properties/range"
+StatusCode = 204
+Elapsed = 0.0582
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 05:50:29 p. m. -06:00] Information: "Propiedad no encontrada en isi 6656532"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000027"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:51:54 p. m. -06:00] Information: "Propiedad no encontrada en isi 16721"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000027"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:51:55 p. m. -06:00] Information: "Propiedad no encontrada en isi 17311"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000027"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:51:57 p. m. -06:00] Information: "Propiedad no encontrada en isi 17377"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000027"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:51:59 p. m. -06:00] Information: "Propiedad no encontrada en isi 18593"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "b6af3519-e0e0-44f7-bac4-5a8b61a4b6c4"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20B:00000027"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVGD6KOQ20B"
+
+[28/11/2023 05:52:52 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/properties/range"
+StatusCode = 200
+Elapsed = 148712.199
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 06:40:32 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/login/logout"
+StatusCode = 204
+Elapsed = 6.8599
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 06:40:32 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/propertytype"
+StatusCode = 204
+Elapsed = 0.0752
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 06:40:32 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "POST"
+RequestPath = "/api/login/logout"
+StatusCode = 400
+Elapsed = 16.6241
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 06:40:32 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/propertytype"
+StatusCode = 204
+Elapsed = 0.0597
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 06:40:32 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/antiforgery"
+StatusCode = 204
+Elapsed = 0.0549
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 06:40:32 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/antiforgery"
+StatusCode = 200
+Elapsed = 24.0437
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 06:40:32 p. m. -06:00] Information: "result: System.Collections.Generic.List`1[<>f__AnonymousType0`2[System.Int32,System.String]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "0ceeab19-28b6-4e35-9723-ee3cdc9cb9eb"
+ActionName = "backend_marketplace.Controllers.FiltersController.PropertyType (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20D:00000003"
+RequestPath = "/api/filters/propertytype"
+ConnectionId = "0HMVGD6KOQ20D"
+
+[28/11/2023 06:40:32 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/propertytype"
+StatusCode = 200
+Elapsed = 533.0949
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 06:40:32 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/states"
+StatusCode = 204
+Elapsed = 0.0594
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 06:40:33 p. m. -06:00] Information: "result: System.Collections.Generic.List`1[<>f__AnonymousType0`2[System.Int32,System.String]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "0ceeab19-28b6-4e35-9723-ee3cdc9cb9eb"
+ActionName = "backend_marketplace.Controllers.FiltersController.PropertyType (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20D:00000007"
+RequestPath = "/api/filters/propertytype"
+ConnectionId = "0HMVGD6KOQ20D"
+
+[28/11/2023 06:40:33 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/propertytype"
+StatusCode = 200
+Elapsed = 64.9292
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 06:40:33 p. m. -06:00] Information: "result: System.Collections.Generic.List`1[<>f__AnonymousType0`2[System.Int32,System.String]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "c1654348-9621-4034-b116-253ad3bc86dd"
+ActionName = "backend_marketplace.Controllers.FiltersController.States (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20D:00000009"
+RequestPath = "/api/filters/states"
+ConnectionId = "0HMVGD6KOQ20D"
+
+[28/11/2023 06:40:33 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/states"
+StatusCode = 200
+Elapsed = 366.417
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[28/11/2023 06:40:33 p. m. -06:00] Information: "result: System.Collections.Generic.List`1[<>f__AnonymousType0`2[System.Int32,System.String]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "c1654348-9621-4034-b116-253ad3bc86dd"
+ActionName = "backend_marketplace.Controllers.FiltersController.States (backend_marketplace)"
+RequestId = "0HMVGD6KOQ20D:0000000B"
+RequestPath = "/api/filters/states"
+ConnectionId = "0HMVGD6KOQ20D"
+
+[28/11/2023 06:40:33 p. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/states"
+StatusCode = 200
+Elapsed = 61.9173
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+

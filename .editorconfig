@@ -1,0 +1,7 @@
+# Package version 2.9.0 and later
+dotnet_code_quality.CA2007.exclude_async_void_methods = true
+
+# Package version 2.6.3 and earlier
+dotnet_code_quality.CA2007.skip_async_void_methods = true
+
+dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary

@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="signinuserservice_addnewuser_exception" xml:space="preserve">
+    <value>Ha ocurrido un error</value>
+  </data>
+  <data name="signinuserservice_addnewuser_fail" xml:space="preserve">
+    <value>Usuario ya registrado, intenta recuperar tu contraseña o registra uno nuevo </value>
+  </data>
+  <data name="signinuserservice_addnewuser_success" xml:space="preserve">
+    <value>Se ha generado un nuevo usuario {0}</value>
+  </data>
+  <data name="signinuserservice_passwordrecoveryvalidate_exception" xml:space="preserve">
+    <value>Intento de actualizacion fallido, ha ocurrido un error</value>
+  </data>
+  <data name="signinuserservice_passwordrecoveryvalidate_exception_log" xml:space="preserve">
+    <value>Intento de actualizacion de contrasena fallida para el usuario {0} - catch</value>
+  </data>
+  <data name="signinuserservice_passwordrecoveryvalidate_fail" xml:space="preserve">
+    <value>No se ralizo el cambio de contraseña, ha ocurrido un error</value>
+  </data>
+  <data name="signinuserservice_passwordrecoveryvalidate_fail_log" xml:space="preserve">
+    <value>Intento de actualizacion de contrasena fallido al guardar del usuario {0}</value>
+  </data>
+  <data name="signinuserservice_passwordrecoveryvalidate_invalid" xml:space="preserve">
+    <value>Informacion no valida</value>
+  </data>
+  <data name="signinuserservice_passwordrecoveryvalidate_invalid2" xml:space="preserve">
+    <value>Esta esuna peticion invalida, intentalo nuevamente</value>
+  </data>
+  <data name="signinuserservice_passwordrecoveryvalidate_invalid2_log" xml:space="preserve">
+    <value>Intento de recuperacion de contrasena sin peticion registrada para el celular {0}</value>
+  </data>
+  <data name="signinuserservice_passwordrecoveryvalidate_invalid3" xml:space="preserve">
+    <value>Peticion invalida, intentalo nuevamente</value>
+  </data>
+  <data name="signinuserservice_passwordrecoveryvalidate_invalid3_log" xml:space="preserve">
+    <value>Intento de validacion de codigo de mensaje, resultado no exitoso: {0}</value>
+  </data>
+  <data name="signinuserservice_passwordrecoveryvalidate_invalid_log" xml:space="preserve">
+    <value>Intento de validacion de recuperacion de contrasena con un celular no valido: {0}</value>
+  </data>
+  <data name="signinuserservice_passwordrecoveryvalidate_success" xml:space="preserve">
+    <value>Cambio de contraseña se ha realizado con exito</value>
+  </data>
+  <data name="signinuserservice_passwordrecoveryvalidate_success_log" xml:space="preserve">
+    <value>Cambio de contraseña se ha realizado con exito para el usuario {0}</value>
+  </data>
+  <data name="signinuserservice_passwordrecovery_exception" xml:space="preserve">
+    <value>Ha ocurrido un error</value>
+  </data>
+  <data name="signinuserservice_passwordrecovery_exception_log" xml:space="preserve">
+    <value>Ha ocurrido un error al intentar genrar una recuperacion de password del usuario {0}</value>
+  </data>
+  <data name="signinuserservice_passwordrecovery_fail" xml:space="preserve">
+    <value>Recuperacion no enviada</value>
+  </data>
+  <data name="signinuserservice_passwordrecovery_fail_log" xml:space="preserve">
+    <value>Intento de envio de recuperacion de contrasena fallida para el usuario {0}</value>
+  </data>
+  <data name="signinuserservice_passwordrecovery_invalid" xml:space="preserve">
+    <value />
+  </data>
+  <data name="signinuserservice_passwordrecovery_invalid_log" xml:space="preserve">
+    <value />
+  </data>
+  <data name="signinuserservice_passwordrecovery_success" xml:space="preserve">
+    <value>Recuperacion enviada</value>
+  </data>
+  <data name="signinuserservice_passwordrecovery_success_log" xml:space="preserve">
+    <value>Se ha enviado la recuperacion de contrasena para el usuario {0}</value>
+  </data>
+  <data name="signinuserservice_sendcodesms_exception" xml:space="preserve">
+    <value>Ha ocurrido un error</value>
+  </data>
+  <data name="signinuserservice_sendcodesms_fail" xml:space="preserve">
+    <value />
+  </data>
+  <data name="signinuserservice_sendcodesms_invalid" xml:space="preserve">
+    <value>Informacion no valida</value>
+  </data>
+  <data name="signinuserservice_sendcodesms_invalid_log" xml:space="preserve">
+    <value>Intento de envio de sms de registro fallido para el numero: {0}</value>
+  </data>
+  <data name="signinuserservice_sendcodesms_success" xml:space="preserve">
+    <value>Mensaje enviado</value>
+  </data>
+  <data name="signinuserservice_userinformation_exception" xml:space="preserve">
+    <value>Ha ocurrido un error</value>
+  </data>
+  <data name="signinuserservice_userinformation_exception_log" xml:space="preserve">
+    <value>Ha ocurrido un error al tratar de obtener informacion de usuario {0}</value>
+  </data>
+  <data name="signinuserservice_userinformation_fail" xml:space="preserve">
+    <value>Informacion de usuario no encontrada</value>
+  </data>
+  <data name="signinuserservice_userinformation_fail_log" xml:space="preserve">
+    <value>Informacion de usuario no encontrada de usuario {0}</value>
+  </data>
+  <data name="signinuserservice_userinformation_invalid" xml:space="preserve">
+    <value>Datos invalidos</value>
+  </data>
+  <data name="signinuserservice_userinformation_invalid_log" xml:space="preserve">
+    <value>Intento de obtener informacion del usuario {0} fallida</value>
+  </data>
+  <data name="signinuserservice_userinformation_success" xml:space="preserve">
+    <value>Informacion encontrada</value>
+  </data>
+  <data name="signinuserservice_validatesmscodepasswordrecovery_exception" xml:space="preserve">
+    <value>Ha ocurrido un error</value>
+  </data>
+  <data name="signinuserservice_validatesmscodepasswordrecovery_exception_log" xml:space="preserve">
+    <value>Error exception  al validar codigo de sms del usuario {0}</value>
+  </data>
+  <data name="signinuserservice_validatesmscodepasswordrecovery_fail" xml:space="preserve">
+    <value>La validacion no ha sido exitosa</value>
+  </data>
+  <data name="signinuserservice_validatesmscodepasswordrecovery_fail_log" xml:space="preserve">
+    <value>El codigo recibido en el celular {0} no es valido</value>
+  </data>
+  <data name="signinuserservice_validatesmscodepasswordrecovery_invalid" xml:space="preserve">
+    <value>Informacion no valida</value>
+  </data>
+  <data name="signinuserservice_validatesmscodepasswordrecovery_invalid_log" xml:space="preserve">
+    <value>Intento de validacion de registro fallido para el numero: {0}</value>
+  </data>
+  <data name="signinuserservice_validatesmscodepasswordrecovery_success" xml:space="preserve">
+    <value>Se valido correctamente el codigo</value>
+  </data>
+  <data name="signinuserservice_validatesmscodepasswordrecovery_success_log" xml:space="preserve">
+    <value>Validacion de codigo de recuperacion de contrasena validado: {0}</value>
+  </data>
+  <data name="signinuserservice_validatesmscode_fail" xml:space="preserve">
+    <value>La validacion no ha sido exitosa</value>
+  </data>
+  <data name="signinuserservice_validatesmscode_invalid" xml:space="preserve">
+    <value>Informacion no valida</value>
+  </data>
+  <data name="signinuserservice_validatesmscode_invalid_log" xml:space="preserve">
+    <value>Intento de validacion de registro fallido para el numero {0}</value>
+  </data>
+  <data name="signinuserservice_validatesmscode_success" xml:space="preserve">
+    <value>Se valido correctamente el numero telefonico</value>
+  </data>
+  <data name="smsservice_sendsmsotp_success" xml:space="preserve">
+    <value>Respuesta de envio de mesaje: {0}</value>
+  </data>
+  <data name="smsservice_validatesmsotp_success" xml:space="preserve">
+    <value>Respuesta validacion sms {0}</value>
+  </data>
+</root>

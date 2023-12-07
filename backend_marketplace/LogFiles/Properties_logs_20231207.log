@@ -1,0 +1,618 @@
+[07/12/2023 10:01:35 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://192.168.100.34:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[07/12/2023 10:01:35 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[07/12/2023 10:01:35 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[07/12/2023 10:01:35 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[07/12/2023 10:01:35 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Users\INTECH\source\Workspaces\Finatrategy\Dev\Ticket 205698 - Busqueda propiedades\Src\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[07/12/2023 10:01:53 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/antiforgery"
+StatusCode = 204
+Elapsed = 41.9975
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:01:53 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/properties/range"
+StatusCode = 204
+Elapsed = 42.0201
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:01:53 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/propertytype"
+StatusCode = 204
+Elapsed = 41.9983
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:01:55 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/antiforgery"
+StatusCode = 200
+Elapsed = 1043.533
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:02:01 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:01 a. m. -06:00] Information: "Inicia Propierties Range 07/12/2023 10:02:01 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:01 a. m. -06:00] Information: "result: System.Collections.Generic.List`1[<>f__AnonymousType0`2[System.Int32,System.String]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "7e78ba4d-b628-47c5-b745-dd2728d2c4da"
+ActionName = "backend_marketplace.Controllers.FiltersController.PropertyType (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000005"
+RequestPath = "/api/filters/propertytype"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:01 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/propertytype"
+StatusCode = 200
+Elapsed = 7257.8381
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:02:01 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/states"
+StatusCode = 204
+Elapsed = 0.1038
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:02:01 a. m. -06:00] Information: "result: System.Collections.Generic.List`1[<>f__AnonymousType0`2[System.Int32,System.String]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "7e78ba4d-b628-47c5-b745-dd2728d2c4da"
+ActionName = "backend_marketplace.Controllers.FiltersController.PropertyType (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000007"
+RequestPath = "/api/filters/propertytype"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:01 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/propertytype"
+StatusCode = 200
+Elapsed = 69.9129
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:02:02 a. m. -06:00] Information: "result: System.Collections.Generic.List`1[<>f__AnonymousType0`2[System.Int32,System.String]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "d41a8d83-5ab3-4a41-80d9-bf27dc9d41f6"
+ActionName = "backend_marketplace.Controllers.FiltersController.States (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000009"
+RequestPath = "/api/filters/states"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:02 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/states"
+StatusCode = 200
+Elapsed = 886.5828
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:02:02 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/bedrooms"
+StatusCode = 204
+Elapsed = 0.1429
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:02:02 a. m. -06:00] Information: "result: System.Linq.Enumerable+SelectRangeIterator`1[<>f__AnonymousType0`2[System.Int32,System.Int32]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "d648abdb-79d0-433e-8ff2-5bf60707bfe3"
+ActionName = "backend_marketplace.Controllers.FiltersController.Bedrooms (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:0000000D"
+RequestPath = "/api/filters/bedrooms"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:02 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/bedrooms"
+StatusCode = 200
+Elapsed = 17.0632
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:02:02 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/fullbathrooms"
+StatusCode = 204
+Elapsed = 0.1619
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:02:02 a. m. -06:00] Information: "result: System.Linq.Enumerable+SelectRangeIterator`1[<>f__AnonymousType0`2[System.Int32,System.Int32]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "5698e526-7b1e-4743-bf5e-94e79437bf74"
+ActionName = "backend_marketplace.Controllers.FiltersController.FullBathrooms (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:0000000F"
+RequestPath = "/api/filters/fullbathrooms"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:02 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/fullbathrooms"
+StatusCode = 200
+Elapsed = 11.0689
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:02:02 a. m. -06:00] Information: "result: System.Collections.Generic.List`1[<>f__AnonymousType0`2[System.Int32,System.String]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "d41a8d83-5ab3-4a41-80d9-bf27dc9d41f6"
+ActionName = "backend_marketplace.Controllers.FiltersController.States (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:0000000B"
+RequestPath = "/api/filters/states"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:02 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/states"
+StatusCode = 200
+Elapsed = 130.6278
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:02:02 a. m. -06:00] Information: "result: System.Linq.Enumerable+SelectRangeIterator`1[<>f__AnonymousType0`2[System.Int32,System.Int32]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "d648abdb-79d0-433e-8ff2-5bf60707bfe3"
+ActionName = "backend_marketplace.Controllers.FiltersController.Bedrooms (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000011"
+RequestPath = "/api/filters/bedrooms"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:02 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/bedrooms"
+StatusCode = 200
+Elapsed = 1.3877
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:02:02 a. m. -06:00] Information: "result: System.Linq.Enumerable+SelectRangeIterator`1[<>f__AnonymousType0`2[System.Int32,System.Int32]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "5698e526-7b1e-4743-bf5e-94e79437bf74"
+ActionName = "backend_marketplace.Controllers.FiltersController.FullBathrooms (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000013"
+RequestPath = "/api/filters/fullbathrooms"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:02 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/fullbathrooms"
+StatusCode = 200
+Elapsed = 1.3839
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:02:03 a. m. -06:00] Information: "Número de Propiedades obtenidas 908 07/12/2023 10:02:03 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:03 a. m. -06:00] Information: "Se agrega lista paginada 07/12/2023 10:02:03 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:03 a. m. -06:00] Information: "Se ordena lista 07/12/2023 10:02:03 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:03 a. m. -06:00] Information: "Inicia mapeo de propiedades 07/12/2023 10:02:03 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:05 a. m. -06:00] Information: "Finaliza mapeo de propiedades 07/12/2023 10:02:05 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:05 a. m. -06:00] Information: "Se inicia obtencion de token servicio isi 07/12/2023 10:02:05 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:05 a. m. -06:00] Information: "Se obtiene de token servicio isi 07/12/2023 10:02:05 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:05 a. m. -06:00] Information: "Inicia obtención de status de credito 07/12/2023 10:02:05 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:06 a. m. -06:00] Information: "Propiedad no encontrada en isi 2111"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:15 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000015"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:15 a. m. -06:00] Information: "Inicia Propierties Range 07/12/2023 10:02:15 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000015"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:17 a. m. -06:00] Information: "Número de Propiedades obtenidas 908 07/12/2023 10:02:17 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000015"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:17 a. m. -06:00] Information: "Se agrega lista paginada 07/12/2023 10:02:17 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000015"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:17 a. m. -06:00] Information: "Se ordena lista 07/12/2023 10:02:17 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000015"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:17 a. m. -06:00] Information: "Inicia mapeo de propiedades 07/12/2023 10:02:17 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000015"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:18 a. m. -06:00] Information: "Finaliza mapeo de propiedades 07/12/2023 10:02:18 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000015"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:18 a. m. -06:00] Information: "Se inicia obtencion de token servicio isi 07/12/2023 10:02:18 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000015"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:18 a. m. -06:00] Information: "Se obtiene de token servicio isi 07/12/2023 10:02:18 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000015"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:18 a. m. -06:00] Information: "Inicia obtención de status de credito 07/12/2023 10:02:18 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000015"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:19 a. m. -06:00] Information: "Propiedad no encontrada en isi 2111"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000015"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:41 a. m. -06:00] Information: "Finaliza obtención de status de credito 07/12/2023 10:02:41 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:41 a. m. -06:00] Information: "**************OK 07/12/2023 10:02:41 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:41 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/properties/range"
+StatusCode = 200
+Elapsed = 47009.7521
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:02:41 a. m. -06:00] Information: "Finaliza obtención de status de credito 07/12/2023 10:02:41 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000015"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:41 a. m. -06:00] Information: "**************OK 07/12/2023 10:02:41 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000015"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:02:42 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/properties/range"
+StatusCode = 200
+Elapsed = 26748.2329
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:03:32 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/propertytype"
+StatusCode = 204
+Elapsed = 0.1332
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:03:32 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/properties/range"
+StatusCode = 204
+Elapsed = 0.1246
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:03:32 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000019"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:32 a. m. -06:00] Information: "Inicia Propierties Range 07/12/2023 10:03:32 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000019"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:32 a. m. -06:00] Information: "result: System.Collections.Generic.List`1[<>f__AnonymousType0`2[System.Int32,System.String]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "7e78ba4d-b628-47c5-b745-dd2728d2c4da"
+ActionName = "backend_marketplace.Controllers.FiltersController.PropertyType (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000017"
+RequestPath = "/api/filters/propertytype"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:32 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/propertytype"
+StatusCode = 200
+Elapsed = 63.5251
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:03:32 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/states"
+StatusCode = 204
+Elapsed = 0.0734
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:03:32 a. m. -06:00] Information: "result: System.Collections.Generic.List`1[<>f__AnonymousType0`2[System.Int32,System.String]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "d41a8d83-5ab3-4a41-80d9-bf27dc9d41f6"
+ActionName = "backend_marketplace.Controllers.FiltersController.States (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:0000001B"
+RequestPath = "/api/filters/states"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:32 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/states"
+StatusCode = 200
+Elapsed = 89.7224
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:03:32 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/bedrooms"
+StatusCode = 204
+Elapsed = 0.083
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:03:32 a. m. -06:00] Information: "result: System.Linq.Enumerable+SelectRangeIterator`1[<>f__AnonymousType0`2[System.Int32,System.Int32]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "d648abdb-79d0-433e-8ff2-5bf60707bfe3"
+ActionName = "backend_marketplace.Controllers.FiltersController.Bedrooms (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:0000001D"
+RequestPath = "/api/filters/bedrooms"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:32 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/bedrooms"
+StatusCode = 200
+Elapsed = 1.5341
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:03:32 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "OPTIONS"
+RequestPath = "/api/filters/fullbathrooms"
+StatusCode = 204
+Elapsed = 0.1022
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:03:32 a. m. -06:00] Information: "result: System.Linq.Enumerable+SelectRangeIterator`1[<>f__AnonymousType0`2[System.Int32,System.Int32]]"
+SourceContext = "backend_marketplace.Controllers.FiltersController"
+ActionId = "5698e526-7b1e-4743-bf5e-94e79437bf74"
+ActionName = "backend_marketplace.Controllers.FiltersController.FullBathrooms (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:0000001F"
+RequestPath = "/api/filters/fullbathrooms"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:32 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/filters/fullbathrooms"
+StatusCode = 200
+Elapsed = 1.1549
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[07/12/2023 10:03:34 a. m. -06:00] Information: "Número de Propiedades obtenidas 908 07/12/2023 10:03:34 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000019"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:34 a. m. -06:00] Information: "Se agrega lista paginada 07/12/2023 10:03:34 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000019"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:34 a. m. -06:00] Information: "Se ordena lista 07/12/2023 10:03:34 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000019"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:34 a. m. -06:00] Information: "Inicia mapeo de propiedades 07/12/2023 10:03:34 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000019"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:35 a. m. -06:00] Information: "Finaliza mapeo de propiedades 07/12/2023 10:03:35 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000019"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:35 a. m. -06:00] Information: "Se inicia obtencion de token servicio isi 07/12/2023 10:03:35 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000019"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:35 a. m. -06:00] Information: "Se obtiene de token servicio isi 07/12/2023 10:03:35 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000019"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:35 a. m. -06:00] Information: "Inicia obtención de status de credito 07/12/2023 10:03:35 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000019"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:35 a. m. -06:00] Information: "Propiedad no encontrada en isi 2111"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000019"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:58 a. m. -06:00] Information: "Finaliza obtención de status de credito 07/12/2023 10:03:58 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000019"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:58 a. m. -06:00] Information: "**************OK 07/12/2023 10:03:58 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "78618b3b-43a0-41c8-815d-b966143eed1d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVN7N54THSJ:00000019"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVN7N54THSJ"
+
+[07/12/2023 10:03:58 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/api/properties/range"
+StatusCode = 200
+Elapsed = 26133.9427
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "galvanic-portal-322302",
+  "private_key_id": "8e45e88ab3a07bccaaf745561eee82fd26928f37",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzGaTkB5/Aiobv\nBxEjnPB2QgLSEC0YXGpTFTY3P3H0XQhWK/0zMkehjAoV8rbsq0zsvpIZ/OAMbV/U\narIaQhVXvFLNngSVYt2RqAZDTvQoO9xOguV8FLS4ezTvdO0+wu0C5LeSGKyNqmyb\nvfRyjOwhy5W/ccFWEemZ5QbHkb78DaTV/9d8NHlo+/cw/0S4RaYyPRhCCVjrGtzi\nbYUIZxuK0CB/crPfUwjpEnFOe2FeI/iNSHLJ4K/vbnoBmqqQwMcdjLCN8MzGdQcy\nrdvN6IA0QF3UbSrXdo8fsJwA62R8VBL/wq3As/doiKK5F/VL4jtNr4rviVBUV+Az\nVJU9V9QNAgMBAAECggEACNdg/bXHo95iy112seKfN0NKdtrAEyYKxKe1KbSK2FSY\nYwKgaPzYLugmHk/BSn0pWr2MolZKrCphEvAicyvkeFSOZOKiWMqM5BIenweAg5Ty\n6vhIwl+WTU4dvp1v0cuXHi+yxTZNHGA3pNeTf+0nggKWFaGUuP5A4S0+cK8n9bLU\nllIhxmIxAfh1m1WmAlI64AulQQuEwNmsyxGke0rZQdQbJNbqeTgYjzuXiS4mKG12\nYALhzY+jdIjovY1xbdf2OU33X9AuP7+MkPnmg4I5dqKikt8BNg8yUOEbOR/5ToXm\nuIsiHT3rEqE7zlHTF9JnCZfOEjrY0t4VjXMywIlAgQKBgQDXshOz5XDkamlnOVKL\n+dE0vpbySKgPuvOcWK9LBL9v9XRx6P7fHZjV4JAVD+ivohs5+wmwyxMLjWCnSuOh\n/xPmhv1Aqn1cBbux9x3BudNnX3NZo6hAUM0bZnMWNzmglqVtPQ5+ehlYfka53HAv\nzMrziGuRvKDBh+tQKHoNWMEOjQKBgQDUkQDX4bOB/aU19Jupfo9AjGUPtEeGmiGz\npof12bDYYDboxWkQjBzFbyqQ4f99ILw5H5ZtSv0eKumKbtoWuujpHOe662s0x3dB\nctYwy6Qu3BzH7wwBpW4szH6T6exxvg/gf3nf1z9/1WcV0olQX/lcdoaG9F0rQgQe\nm/SHPck7gQKBgAYa7UHXSbW9aVRZpAOAQ7Kpfl5HPjKLyR9wxy1paf3CRdR/ks8/\n6DaNj6Z4984Y2Ypvl5ugc96M1uKFVSIdtTN+OKbe7INxShnEc9wq5Vf0tLAh2L5R\nSyzuXm2PjJsGCJKp+sILtLHziQ7ztV00/72a6+iJHUe9ECUJsEK2c2h1AoGBALX+\nXFl5XYbLUxsqDeiFekMKsTBL6v1ck8RLrZaZxqbLYdfTxUusmqmTrz8Sr/tC/sRt\nvg5fKO4eUYv7su/JIccMv36zNzueGAXKO4bVpAGW5XFswrvaFsV2ZF1h59XOo6tT\nmVZD5ZMedD8j3fsZ4NcAh9ed+vMhd4N5hVgRV2yBAoGABk53ElaeXrc6SZPU3a8f\n489SboPr1XRVuptIkSW83sPXzKWvQWwtJuA8jK25Joz103pGLdb77Pl3UNGrrLT8\nr6S8ZIIy5oR7GXuNH8xD7USt2rUgzsLx1Bcta4jbAQrfQzb+G+NAQJKoyA06Ffwe\n1s2eFM4ewscRICbO/WL5gm4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "marketplace@galvanic-portal-322302.iam.gserviceaccount.com",
+  "client_id": "112496631131530007409",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/marketplace%40galvanic-portal-322302.iam.gserviceaccount.com"
+}

@@ -1,0 +1,474 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+	<title>Page Title</title>
+	<meta name="generator" content="LibreOffice 7.2.7.2 (Windows)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2022-12-19T22:35:00.037000000"/>
+	<meta name="" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="created" content="00:00:00">
+	<meta name="created" content="00:00:00">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body lang="es-MX" dir="ltr">
+	<p>
+		<b>CONVENIO DE CONFIDENCIALIDAD</b>, EN LO SUCESIVO DENOMINADO EL <b>"CONVENIO"</b>, QUE CELEBRAN POR UNA PARTE LA SOCIEDAD <b>"FINASTRATEGY MX", S.A.P.I, DE C.V.</b>, PARTE A LA QUE EN LO SUCESIVO SE LE DENOMINARÁ LA <b>"PARTE DIVULGANTE"</b>, REPRESENTADA EN ESTE ACTO POR EL SEÑOR <b>MAURICIO CRUZ LÓPEZ</b> Y POR LA OTRA PARTE POR SU PROPIO DERECHO <b>#NOMBRECOMPLETO</b>, A QUIEN EN LO SUCESIVO SE LE DENOMINARÁ COMO LA <b>"PARTE RECEPTORA"</b>, A AMBAS PARTES EN CONJUNTO SE LES DENOMINARÁ COMO <b><b>"LAS PARTES"</b></b>, MISMAS QUE ACUERDAN SUJETARSE AL TENOR DE LAS SIGUIENTES DECLARACIONES Y CLÁUSULAS:
+	</p>
+	<table cellpadding="2" cellspacing="2">
+		<thead>
+			<tr>
+				<th style="border: none; padding: 0cm">
+					<p><b>DECLARACIONES</b></p>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>I. Declara la "PARTE DIVULGANTE", a través de sus representantes legales:</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						A.	Es una sociedad mexicana, debidamente constituida y existente conforme a las leyes de México, según consta en la escritura pública número seiscientos dieciocho, de fecha veintiocho de marzo de dos mil siete, otorgada ante el licenciado Alejandro Caballero Gastélum, titular de la notaría número ciento cincuenta del Estado de México, cuyo primer testimonio quedó inscrito en el Registro Público de Comercio del Estado de México, en el folio mercantil número trescientos setenta y un mil cincuenta y siete, de fecha veinticinco de septiembre de dos mil siete.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						B.	Que cambió el régimen de la sociedad de "Sociedad Anónima de Capital Variable" a "Sociedad Anónima Promotora de Inversión de Capital Variable, SOFOM, ENTIDAD NO REGULADA"", según se acredita con la escritura número seis mil setecientos setenta y tres, de fecha veintitrés de octubre de dos mil trece, ante el licenciado Jorge Maldonado Montemayor, titular de la notaría número cincuenta y cinco de Monterrey, Estado de Nuevo León, cuyo primer testimonio quedó inscrito en el folio mercantil número ciento cuarenta y dos mil novecientos trece asterisco uno.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						C.	Que mediante Asamblea General de Accionistas eliminó de su denominación social la expresión "SOFOM, E.N.R.", para quedar como "Sociedad Anónima Promotora de Inversión de Capital Variable" o por su abreviatura "S.A.P.I. de C.V.", según se acredita con la escritura pública número quince mil seiscientos sesenta y nueve de fecha veintiocho de agosto de dos mil diecinueve, ante el licenciado Jorge Maldonado Montemayor, titular de la notaría número cincuenta y cinco de Monterrey, Nuevo León. cuyo primer testimonio quedó inscrito en el folio mercantil número ciento cuarenta y dos mil novecientos trece.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						D.	Que por escritura número dieciséis mil setecientos trece, de fecha treinta de Diciembre de dos mil diecinueve, otorgada ante la fe del Licenciado Jorge Maldonado Montemayor, titular de la notaria publica número cincuenta y cinco de Monterrey, Estado de Nuevo León; se hizo constar resoluciones unánimes adoptadas fuera de Asamblea de Accionistas en donde se autorizaron reformas a los estatutos sociales; aumento en el capital social de la sociedad; renuncia, designación y/o ratificación de las personas integrantes del órgano de administración; creación de un Comité Ejecutivo, de Auditoría, de Riesgos, de Planeación Estratégica y Recursos Humanos  de la sociedad; revocación y otorgamiento de poderes; dicha escritura quedó debidamente inscrita en el Registro Público de Comercio de Monterrey, Nuevo León, bajo el NCI 202000054787, de fecha dieciocho de Marzo de dos mil veinte.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						E.	Su representante tiene capacidad legal para celebrar el presente contrato y que las facultades con las que actúa no le han sido revocadas, limitadas, ni modificadas en forma alguna, tal y como consta en la escritura pública número veinticuatro mil cuatrocientos catorce, de fecha veintitrés de febrero de dos mil veintidós, otorgado ante la fe del Licenciado Jorge Maldonado Montemayor, titular de la notaría número cincuenta y cinco con ejercicio en el primer Distrito del Estado y con residencia en la Ciudad de Monterrey, Estado de Nuevo León, misma que quedó debidamente inscrita en el Registro Público de Comercio de Monterrey, Nuevo León, bajo el NCI 202200048756 con fecha 01 de marzo de 2022.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						F.	Que tiene su fiscal ubicado en Avenida Doctor Ignacio Morones número 1500, Piso 6, Colonia Nuevas Colonias, Monterrey, Estado de Nuevo León, C.P 64710
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						G.	Que se encuentra inscrita ante el Registro Federal de Contribuyentes bajo la clave: <b>"FIN070328AVA"</b>.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						H.	Que compartirá Información Confidencial con la <b><b>"PARTE RECEPTORA"</b></b>, a efecto de que éste pueda realizar un estudio de viabilidad de la posible y eventual concreción de una operación propia del giro del negocio de la <b>"PARTE DIVULGANTE"</b>.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						II.	 Declara la "PARTE RECEPTORA", por su propio derecho:
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+								A.	Que es una persona física con la capacidad de ejercicio y de goce para obligarse en los términos y condiciones del presente contrato dice ser originario <b>#LUGARNACIMIENTO</b>, lugar donde nació el día <b>#FECHANACIMIENTO</b>, con ocupación <b>#OCUPACION</b>, quien se identifica con <b>INE</b> expedida #DOCUMENTOEXPEDICION
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+								B.	
+						Que tiene su domicilio en <b>#DOMICILIO</b>.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+								 C.	
+						Que se encuentra inscrita ante el Registro Federal de Contribuyentes bajo la clave: <b>"#RFC"</b>.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+								 D.	Que se encuentra comprendido dentro de sus intereses adquirir alguno de los inmuebles o créditos hipotecarios cuya titularidad reporta la <b>"PARTE DIVULGANTE"</b>.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+								EN VIRTUD DE LO ANTERIOR, con base en las Declaraciones contenidas en el presente Convenio, <b><b>"LAS PARTES"</b></b> otorgan las siguientes Cláusulas:
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<table cellpadding="2" cellspacing="2">
+		<thead>
+			<tr>
+				<th style="border: none; padding: 0cm">
+					<b><p>C L Á U S U L A S</p></b>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						<b>PRIMERA. <b>"LAS PARTES"</b></b> acuerdan que el objeto del presente Convenio lo constituye la preservación de la Confidencialidad de la Información compartida entre <b><b>"LAS PARTES"</b></b>, sin que ninguna de ellas tome ventaja de la otra al recibir los datos o procedimientos que sean clasificados como confidenciales y que se hayan o hubiese hecho con anterioridad a la suscripción del presente Convenio.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						Es en tal virtud que la <b><b>"PARTE RECEPTORA"</b></b> acepta y se obliga a conservar de manera confidencial toda la información que le sea compartida por la <b><b>"PARTE DIVULGANTE"</b></b>, y aún aquella que le hubiese transmitido incluso de manera transitoria; por lo que desde este momento acepta que la titularidad de los derechos de la información entregada por la <b><b>"PARTE DIVULGANTE"</b></b> le corresponde a ésta última.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						Adicionalmente <b><b>"LAS PARTES"</b></b> señalan que toda la información que sea enviada o transmitida por la <b><b>"PARTE DIVULGANTE"</b></b> tendrá el estricto carácter de información confidencial, aún en el caso de que la información se haya enviado con anterioridad al presente Convenio, de conformidad con lo establecido en el artículo 82 de la Ley de la Propiedad Industrial.
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						A efecto de realizar el estudio de viabilidad respecto de una posible compra de inmueble o de derechos de crédito o litigiosos de algún crédito hipotecario que posea o administre la <b>"PARTE DIVULGANTE"</b>; la <b><b>"PARTE RECEPTORA"</b></b> reconoce y acepta que la <b><b>"PARTE DIVULGANTE"</b></b> por sí o por tercero autorizado para ello, le proporcionará acceso a Información Confidencial propiedad de ésta última, misma que podrá consistir, de manera enunciativa mas no limitativa en: documentación legal de inmuebles, expedientes técnicos de inmuebles, registros, bases de datos, listados y en general cualquier modalidad de información que por cualquier medio sea proporcionada o transmitida por la <b><b>"PARTE DIVULGANTE"</b></b>, la cual contiene o de otra forma refleja información relacionada con las actividades empresariales que le son propias de su objeto social bajo el que fue fundada, respecto de los Inmuebles, los deudores y/o los obligados solidarios de los mismos; información que no se encuentra disponible al público. Del mismo modo, en este acto <b><b>"LAS PARTES"</b></b> establecen que, en caso de que dicha información deba ser incluida o reflejada en los análisis, compilaciones, resúmenes, estudios y cualesquiera otros documentos preparados por la <b><b>"PARTE RECEPTORA"</b></b>, la citada información en todo momento deberá considerarse como confidencial, a efecto de obviar repeticiones en lo subsecuente todo lo anteriormente considerado, en su conjunto o por separado será referido en el presente Convenio como <u>"Información Confidencial"</u>.
+					</p>
+				</td>
+			</tr>
+
+
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						<b>SEGUNDA.</b> La vigencia del presente Convenio lo constituye el periodo de 2(dos) años, contados a partir de la fecha de suscripción del presente Convenio, término que puede prorrogarse automáticamente por periodos de tiempo igual, si no hay notificación de terminación por escrito por parte de la <b><b>"PARTE DIVULGANTE"</b></b>. 
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						<b>TERCERA.</b> La Información Confidencial deberá ser manejada y tratada por la <b><b>"PARTE RECEPTORA"</b></b> de la forma en la que trata su propia Información Confidencial; aunque en todo momento deberá respetar los siguientes presupuestos en su tratamiento:
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+								 a) No transcribirá, ni obtendrá copias no autorizadas, de la Información Confidencial, ni de cualquier porción de la misma, que pueda ser revelada a terceros en forma escrita, magnética o de cualquier otra manera;
+					</p>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+								b) Cumplirá con el protocolo de resguardo de información confidencial que sea normalmente empleado por empresas del ramo. Por lo que la <b><b>"PARTE RECEPTORA"</b></b> en este acto se obliga a adoptar e implementar, a partir de la fecha de firma del presente Convenio, todos los procedimientos adecuados para impedir el uso o revelación no autorizado de la Información Confidencial, sin importar que medio contenga la citada información;
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+								 c) Solamente empleará la Información Confidencial que le sea compartida para realizar el propósito establecido en el presente Convenio, por lo que no podrá ser cedida, transmitida o de cualquier otra manera transferida a terceros bajo cualquier concepto o modalidad.
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+								 d) La obligación de custodiar y mantener como confidencial la información compartida se constituye con independencia del carácter que le revista al funcionario de la <b>"PARTE DIVULGANTE"</b> que la revele, por lo que se incluyen en este supuesto a sus accionistas, administradores, directores, empleados, factores, asesores internos y externos, y cualquier persona que le preste servicios de manera escrita o indirecta, temporal o de forma permanente.
+					</p>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						<b>CUARTA.</b> Con la suscripción del presente Convenio la <b><b>"PARTE RECEPTORA"</b></b> se obliga a ceñirse en todo momento a las indicaciones emitidas por la <b><b>"PARTE DIVULGANTE"</b></b>, a la vez que se declara conforme y se obliga a no subcontratar, solicitar la prestación de servicios directa, indirectamente o través de la figura de outsourcing, a cualquier persona, ya sea subcontratada directa o indirectamente por la <b><b>"PARTE RECEPTORA"</b></b> con motivo del cumplimiento de las obligaciones consignadas en el presente Convenio.
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						<b>QUINTA.</b> La <b><b>"PARTE DIVULGANTE"</b></b> se encuentra plenamente facultada para solicitar a la <b><b>"PARTE RECEPTORA"</b></b> en cualquier momento, la devolución o destrucción de todos los documentos, planos, medios electrónicos, ópticos o magnéticos, microfilmes o películas y otros instrumentos similares que la <b><b>"PARTE DIVULGANTE"</b></b> le hubiere proporcionado y a destruir todas las notas, referencias y extractos relacionados con el Proyecto, dentro de los 10 (diez) días naturales siguientes a la fecha en que la <b><b>"PARTE DIVULGANTE"</b></b> lo solicite. Será devuelta y/o destruida toda la Información Confidencial excepto aquella información que sea requerida por orden judicial o requerimiento legal; esta información será mantenida con carácter de confidencial por la <b><b>"PARTE RECEPTORA"</b></b>, sus Afiliadas y/o Personas Autorizadas por el periodo necesario y determinado por la ley o hasta que el procedimiento judicial haya concluido.
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						<b>SEXTA.</b> No será considerada como Información Confidencial para los efectos del presente Convenio: (i) información que sea o se convierta en información del dominio público, salvo que esto sea resultado de la divulgación de Información Confidencial por parte de la <b>"PARTE RECEPTORA"</b> o Terceros Relacionados en contravención al presente Convenio y; (ii) información que haya sido proporcionada o sea proporcionada a la <b>"PARTE RECEPTORA"</b> por una fuente (distinta a la <b>"PARTE DIVULGANTE"</b>), siempre y cuando, a juicio de la <b>"PARTE DIVULGANTE"</b>, la <b>"PARTE RECEPTORA"</b> acredite que no tenía conocimiento en el momento, <br/> que dicha información estuviese sujeta a cualquier prohibición de divulgación o restricción de transmisión.
+					</p>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						<b>SÉPTIMA.</b> La <b>"PARTE RECEPTORA"</b> se obliga a abstenerse en todo momento de revelar o divulgar Información Confidencial a persona alguna, con la única excepción de lo establecido en este Convenio. Adicionalmente a lo anterior la <b>"PARTE RECEPTORA"</b> se obliga a no utilizar la Información Confidencial para cualquier otra finalidad distinta a lo consignado en el presente Convenio.
+
+					</p>
+					<p>
+					Sin perjuicio de lo anterior la <b>"PARTE RECEPTORA"</b> por ningún motivo realizará actos tendientes a quebrantar su obligación anteriormente establecida, ya sea por acción u omisión.
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						<b>OCTAVA.</b> Independientemente de cualquier circunstancia que determinara la relación a futuro de <b>"LAS PARTES"</b>, las obligaciones de la <b>"PARTE RECEPTORA"</b> derivadas del presente Convenio permanecerán vigentes, inclusive con posterioridad a la terminación del mismo.
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						<b>NOVENA.</b> En caso de que le sea solicitada o requerida la <b>"PARTE RECEPTORA"</b> la divulgación de la Información Confidencial, por parte de cualquier autoridad; la <b>"PARTE RECEPTORA"</b> notificará con por lo menos 15 (quince) días hábiles de anticipación a la fecha en que deba divulgar la Información Confidencial a la <b>"PARTE DIVULGANTE"</b> de dicho requerimiento, con el objeto de que la <b>"PARTE RECEPTORA"</b> y la <b>"PARTE DIVULGANTE"</b>, consigan siempre minimizar el daño o la exposición derivada de la divulgación de la Información Confidencial.
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						Sin embargo, la <b>"PARTE RECEPTORA"</b> está obligado a divulgar solamente la Información Confidencial que de manera específica le sea requerida por la autoridad competente; por lo que en dicho caso, y siempre y cuando la <b>"PARTE RECEPTORA"</b> coopere totalmente con <b>"PARTE DIVULGANTE"</b> para mitigar el daño causado a <b>"PARTE DIVULGANTE"</b>, la divulgación antes referida se estimará no violatoria del presente Convenio y no constituirá ningún tipo de infracción o incumplimiento de sus obligaciones de confidencialidad.
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						<b>DÉCIMA.</b> La <b>"PARTE RECEPTORA"</b> reconoce y acepta que cualquier violación, incumplimiento o infracción de las obligaciones que le deriven de este Convenio, causaría a la <b>"PARTE DIVULGANTE"</b> importantes y cuantiosos daños y perjuicios, por lo que en caso de incumplimiento, violación, o infracción, la <b>"PARTE RECEPTORA"</b> se obliga irrevocable e incondicionalmente a pagar a la <b>"PARTE DIVULGANTE"</b> la cantidad en la que se valúen los daños y perjuicios causados a aquella por la revelación indebida de la Información Confidencial con independencia de las penas, infracciones y demás penalizaciones establecidas en las Leyes o reglamentos que resulten aplicables al caso.
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						<b>DÉCIMA PRIMERA.</b> La <b>"PARTE RECEPTORA"</b> se obliga a indemnizar y en su caso eximir a la <b>"PARTE DIVULGANTE"</b>, sus funcionarios, agentes y empleados en relación con cualesquiera pérdidas, reclamaciones, demandas, daños, perjuicios o responsabilidades derivadas, directa o indirectamente, de cualquier incumplimiento de las obligaciones a cargo de la <b>"PARTE RECEPTORA"</b> emanadas del presente Convenio o de cualquier divulgación de Información Confidencial por parte de cualquier Tercero Relacionado.
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						<b>DÉCIMA SEGUNDA.</b> El incumplimiento de cualquiera de las obligaciones de la <b>"PARTE RECEPTORA"</b> establecidas en el presente Convenio, podría ser considerada como alguna de las conductas establecidas en las fracciones IV, V y VI del artículo 223 de la Ley de la Propiedad Industrial; sin perjuicio de que sean sujeto de persecución penal de conformidad con lo establecido en el Título Décimo Tercero, Capítulo Segundo del Código Penal para la Ciudad de México y sus correlativos de los demás ordenamientos penales de los Estados Unidos Mexicanos.
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						<b>DÉCIMA TERCERA.</b> Las notificaciones y/o avisos que <b>"LAS PARTES"</b> deban realizar, se enviarán por escrito, por correo electrónico, mensajería especializada o cualquier otro medio que acuse o confirme su recibo por el destinatario, a los domicilios de <b>"LAS PARTES"</b>. Todas las notificaciones, avisos o comunicaciones que <b>"LAS PARTES"</b> se dirijan en términos de esta cláusula se entenderán recibidas en la fecha de su entrega, siempre que se cuente con el acuse de recibo o confirmación de recibo correspondiente.
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+						Por lo que a efectos de lo establecido en la presente cláusula señalan como sus domicilios los siguientes:
+					</p>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="border: none; padding: 0cm">
+					<p>
+
+					</p>
+				</td>
+			</tr>
+
+		</tbody>
+	</table>
+	<br />
+	<table style="width: 100%">
+		<tr>
+			<td style="border: none; padding: 0cm; ">
+				 "PARTE DIVULGANTE"  :
+			</td>
+
+			<td style="border: none;  padding: 0cm">
+				 "PARTE RECEPTORA":
+			</td>
+
+		</tr>
+
+		<tr>
+			<td style="border: none; padding: 0cm; ">
+
+				<p>
+					Calle Odesa número 1219, Col. Portales,
+					<br />Alcaldía Benito Juárez. CP 03300 CDMX
+					<br />CP 03300 CDMX
+					<br />Atención: Mauricio Cruz Lopez.
+					<br />Tel: + 55 7989 7468
+					<br />mauricio@finastrategy.mx
+				</p>
+			</td>
+
+			<td style="border: none;  padding: 0cm">
+				<p>
+					#DIRECCION1
+					<br />Atención: #NOMBRECOMPLETO
+					<br />Tel: #TELEFONO
+					<br />#EMAIL
+				</p>
+			</td>
+
+		</tr>
+	</table>
+
+
+	<br />
+	<table style="width: 100%">
+		<tr>
+			<td style="border: none; padding: 0cm; ">
+				<p>
+					<b>"LAS PARTES"</b> deberán comunicarse por escrito, en términos de la presente cláusula, cualquier cambio a sus domicilios y número telefónico, mientras no sea comunicado algún cambio a los mismos, toda comunicación surtirá sus efectos al momento de su entrega en los domicilios o en los medios electrónicos antes indicados, siempre y cuando medie acuse de recibo.
+				</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td style="border: none; padding: 0cm; ">
+				<p>
+					DÉCIMA CUARTA. En cumplimiento con lo dispuesto por la Ley Federal de Protección de Datos Personales en Posesión de los Particulares publicada en el Diario Oficial de la Federación el 5 de julio de 2010, <b>"LAS PARTES"</b> manifiestan que los datos personales y datos personales sensibles que le sean proporcionados por una de <b>"LAS PARTES"</b> a la otra parte, serán utilizados únicamente para los fines que correspondan en los términos del presente Contrato.
+				</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td style="border: none; padding: 0cm; ">
+				<p>
+					DÉCIMA QUINTA. <b>"LAS PARTES"</b> acuerdan que para todo lo relacionado con la interpretación y/o cumplimiento del presente Convenio, se estará a lo establecido por las leyes y tribunales competentes en la Ciudad de México, por lo que <b>"LAS PARTES"</b> renuncian en este acto expresamente a cualquier fuero que por razón de su domicilio actual o cualquier otro motivo, pudiera llegar a corresponderles.
+				</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td style="border: none; padding: 0cm; ">
+				<p>
+					DECIMA SEXTA.- FIRMA ELECTRÓNICA. En el supuesto que las Partes opten por firmar de manera electrónica el presente Contrato, así como futuros anexos y convenios modificatorios, éstas expresan su consentimiento para que la Firma Electrónica sustituya, para todos los efectos legales a que haya lugar, a la firma autógrafa de las mismas, incluyendo el valor probatorio de ésta. La Firma Electrónica a usar por las Partes podrá ser firma electrónica simple o la firma electrónica avanzada (e.firma o FIEL)
+				</p>
+			</td>
+		</tr>
+
+		<tr>
+			<td style="border: none; padding: 0cm; ">
+				<p>
+					Las Partes convienen en que son aplicables los términos del Código de Comercio y cualquier otra disposición aplicable, respecto de la identidad y expresión de consentimiento de las mismas por medios electrónicos, ópticos o de cualquier otra tecnología mediante el uso de la firma electrónica, a fin de que los Mensajes de Datos sean comunicados entre las Partes de manera segura en su identificación, auténticos e íntegros en su contenido y no repudiables respecto del emisor y receptor.
+				</p>
+			</td>
+		</tr>
+
+
+		<tr>
+			<td style="border: none; padding: 0cm; ">
+				<p>
+					Leído que fue por <b>"LAS PARTES"</b>, y enteradas de su contenido y alcance legal, lo firman de conformidad y por duplicado en la Ciudad de México, el día <b>#FECHAACTUAL</b> dos mil veintidós.
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<table style="width:100%;">
+	<tbody>
+		<tr>
+			<td>
+				PARTE DIVULGANTE
+				<br /> FINASTRATEGY MX", S.A.P.I DE C.V.
+			</td>
+			<td>   
+			PARTE RECEPTORA
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<br />
+				<br />
+				<br />
+				<br />
+			</td>
+		</tr>
+
+
+		<tr>
+			<td>
+				_______________________________
+				<br />SR. MAURICIO CRUZ LÓPEZ
+
+			</td>
+			<td>
+				_______________________________
+				<br /> #NOMBRECOMPLETO
+				<br /> Por su propio derecho.
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Configuration.DefaultWorkflowDescription" xml:space="preserve">
+    <value>Contrato generado desde portal finastrategy para divulgacion de informacion sensible con el usuario</value>
+  </data>
+  <data name="Configuration.DefaultWorkflowName" xml:space="preserve">
+    <value>{0} - Contrato NDA Finastrategy</value>
+  </data>
+  <data name="Configuration.FormIdNDA" xml:space="preserve">
+    <value>51103434-8dd8-4a5f-ad73-dfdb4758a382</value>
+  </data>
+  <data name="Configuration.StepSigner" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Credential.GranttypeService" xml:space="preserve">
+    <value>password</value>
+  </data>
+  <data name="Credential.PasswordService" xml:space="preserve">
+    <value>Admin123123</value>
+  </data>
+  <data name="Credential.UsernameService" xml:space="preserve">
+    <value>carlos.cicler@finastrategy.mx</value>
+  </data>
+  <data name="Field.Address1" xml:space="preserve">
+    <value>0b65b7e2-7f8d-4db6-959f-858f82835788</value>
+  </data>
+  <data name="Field.Address2" xml:space="preserve">
+    <value>f52d4dea-884e-468d-81a0-260f5e86c282</value>
+  </data>
+  <data name="Field.Birthday" xml:space="preserve">
+    <value>9f74c0ca-733a-443b-ae63-1cd64cb0e719</value>
+  </data>
+  <data name="Field.Cellphone" xml:space="preserve">
+    <value>0c7ce929-2715-4abd-8edb-38b02e084461</value>
+  </data>
+  <data name="Field.CurrentDate" xml:space="preserve">
+    <value>90f04efe-772f-4af7-bc4d-37d6704cd8bc</value>
+  </data>
+  <data name="Field.Email" xml:space="preserve">
+    <value>3d969c3d-ed3d-4b66-ab55-8c06ed283e72</value>
+  </data>
+  <data name="Field.EntityBirth" xml:space="preserve">
+    <value>12b4a060-b376-43ab-b999-4648e1c507a0</value>
+  </data>
+  <data name="Field.ExpeditionPlace" xml:space="preserve">
+    <value>78cb6474-bb27-4d69-bc7f-9d1f7a43af85</value>
+  </data>
+  <data name="Field.Fullname" xml:space="preserve">
+    <value>e7ab7d41-9b27-485f-954a-a9a976a60831</value>
+  </data>
+  <data name="Field.Occupation" xml:space="preserve">
+    <value>8d209fae-5c89-4fa2-ac6b-bb04dff2689a</value>
+  </data>
+  <data name="Field.RFC" xml:space="preserve">
+    <value>89c5ef22-6d65-400f-9031-5193b0be212f</value>
+  </data>
+  <data name="Service.AddDocument" xml:space="preserve">
+    <value>https://app.webdoxclm.com/api/v2/documents</value>
+  </data>
+  <data name="Service.BaseUrl" xml:space="preserve">
+    <value>https://app.webdoxclm.com</value>
+  </data>
+  <data name="Service.Login" xml:space="preserve">
+    <value>https://app.webdoxclm.com/api/v2/oauth/token</value>
+  </data>
+  <data name="Service.NewRequest" xml:space="preserve">
+    <value>https://app.webdoxclm.com/api/v2/workflow_requests</value>
+  </data>
+  <data name="Service.Signer" xml:space="preserve">
+    <value>https://app.webdoxclm.com/api/v2/decision_workflows/{0}/steps/{1}/signers?parallel_number=0</value>
+  </data>
+  <data name="Service.StartCelebration" xml:space="preserve">
+    <value>https://app.webdoxclm.com/api/v2/decision_workflows/{0}/validate?number={1}&amp;parallel_number=0</value>
+  </data>
+</root>
