@@ -14,6 +14,8 @@ namespace DataSource
         {
         }
 
+        
+
         public virtual DbSet<SYSTEMUSERS> SYSTEMUSERS { get; set; } = null!;
         public virtual DbSet<TADDRESSES> TADDRESSES { get; set; } = null!;
         public virtual DbSet<TADMINLOGS> TADMINLOGS { get; set; } = null!;
@@ -47,9 +49,15 @@ namespace DataSource
         public virtual DbSet<TUSERSETTINGS> TUSERSETTINGS { get; set; } = null!;
         public virtual DbSet<TUSERSINFO> TUSERSINFO { get; set; } = null!;
         public virtual DbSet<WEBDOXREQUEST> WEBDOXREQUEST { get; set; } = null!;
+        #region StoredProcedure
+        public virtual DbSet<SP_Get_Properties_Filter?> SP_Get_Properties_Filter { get; set; } = null;
+        #endregion StoredProcedure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            #region StoredProcedure
+            modelBuilder.Entity<SP_Get_Properties_Filter>().HasNoKey();            
+            #endregion StoredProcedure
             modelBuilder.Entity<SYSTEMUSERS>(entity =>
             {
                 entity.ToTable("SYSTEMUSERS", "PRO");

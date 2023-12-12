@@ -1,11 +1,12 @@
 ﻿using BusinessLogic.Models;
+using Contracts.Request;
 using System.Collections;
 
 namespace BusinessLogic.Contracts
 {
     public interface IPropertiesService
     {
-        Task<Response> PropertiesRange(int? index, int? items, int? order, int? propertytype, int? state, int? city, decimal? price, int? rooms, int? bathrooms, int? proceduralStage);
+        Task<ResponseBase<PropertyPaged[]>> PropertiesRange(PropertiesFilterDto request);
 
         Task<IEnumerable> Properties();
 
