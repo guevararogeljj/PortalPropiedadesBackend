@@ -62,9 +62,9 @@ namespace backend_marketplace.Controllers
                 return new JsonResult(new { result = "", success = false, message = "usuario no valido" });
             }
 
-            var result = this._signInUserService.Profile(user.ToDictionary());
+            var result = (await this._signInUserService.Profile(user.ToDictionary()));
 
-            return new JsonResult(result.Result);
+            return new JsonResult(result);
         }
 
         [HttpPost("favorites")]
@@ -303,6 +303,22 @@ namespace backend_marketplace.Controllers
             }
 
             var result = await this._signInUserService.NDASignedStatus(data.ToDictionary());
+
+            return new JsonResult(result);
+        }
+
+        [Authorize]
+        [HttpPut("UpdateDataUser")]
+        public async Task<IActionResult> UpdateDataUser(UserData data)
+        {
+            if (!ModelState.IsValid)
+            {
+                this._logger.LogError($"Intento de actualizar datos fallido: {data.ToString()},  IP: {Request.HttpContext.Connection.RemoteIpAddress}");
+
+                return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+            }
+
+            var result = await this._signInUserService.UpdateDataUser(data.ToDictionary());
 
             return new JsonResult(result);
         }

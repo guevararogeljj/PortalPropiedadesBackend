@@ -39,6 +39,7 @@ namespace BusinessLogic.Contracts
         Task<Response> ValidateChangeCellphoneSmsCode(Dictionary<string, object> user);
         Task<Response> ContractInfo(Dictionary<string, object> dictionary);
         Task<Response> NDASignedStatus(Dictionary<string, object> dictionary);
+        Task<Response> UpdateDataUser(Dictionary<string, object> data);
 
         //Task<Response> GenerateContract(Dictionary<string, object> dictionary);
     }

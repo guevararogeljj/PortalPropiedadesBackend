@@ -1,6 +1,7 @@
 ﻿using BusinessLogic.Contracts;
 using BusinessLogic.Models;
 using DataSource.Contracts;
+using DataSource.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -148,9 +149,9 @@ namespace BusinessLogic.Services
         {
             try
             {
-                var userIntance = this._userRepository.InstanceObject();
+                var userIntance = this._userRepository!.InstanceObject();
                 userIntance.CELLPHONE = (string)credentials["Cellphone"];
-                var userinfo = this._userRepository.FindByCellphone(userIntance);
+                var userinfo = await this._userRepository.FindByCellphoneOrEmail(userIntance);
 
                 if (userinfo == null || userinfo.TUSERSINFO == null)
                 {
@@ -159,12 +160,12 @@ namespace BusinessLogic.Services
 
                 var result = new
                 {
-                    names = this.ToTitle(userinfo.TUSERSINFO.NAMES),
-                    lastname = this.ToTitle(userinfo.TUSERSINFO.LASTNAME),
-                    lastname2 = this.ToTitle(userinfo.TUSERSINFO.LASTNAME2),
+                    names = this.ToTitle(userinfo.TUSERSINFO.NAMES!),
+                    lastname = this.ToTitle(userinfo.TUSERSINFO.LASTNAME!),
+                    lastname2 = this.ToTitle(userinfo.TUSERSINFO.LASTNAME2!),
                     gender = userinfo.TUSERSINFO.IDGENDERNavigation == null ? "" : userinfo.TUSERSINFO.IDGENDERNavigation.DESCRIPTION,
                     email = userinfo.EMAIL == null ? "" : userinfo.EMAIL,
-                    cellphone = $"{userinfo.CELLPHONE[0..3]}-{userinfo.CELLPHONE[3..6]}-{userinfo.CELLPHONE[6..]}",
+                    cellphone = userinfo.CELLPHONE!,//$"{userinfo.CELLPHONE![0..3]}-{userinfo.CELLPHONE[3..6]}-{userinfo.CELLPHONE[6..]}",
                 };
 
                 var response = new Response(true, result);
@@ -661,6 +662,43 @@ namespace BusinessLogic.Services
 
             }
 
+        }
+
+        public async Task<Response> UpdateDataUser(Dictionary<string, object> data)
+        {
+            try
+            {
+                var name = (string)data["Names"];
+                var lastName = (string)data["Lastname"];
+                var lastName2 = (string)data["Lastname2"];
+                var email = (string)data["Email"];
+                var cellphone = (string)data["Cellphone"];
+                var userIntance = this._userRepository!.InstanceObject();
+                userIntance.EMAIL = (string)data["Email"];
+                userIntance.CELLPHONE = (string)data["Cellphone"];
+                var userinfo = await this._userRepository.FindByCellphoneOrEmail(userIntance);
+
+                if (userinfo == null || userinfo.TUSERSINFO == null)
+                {
+                  return new Response(false, "Informacion no valida");
+                }
+                userinfo.TUSERSINFO.NAMES = name;
+                userinfo.TUSERSINFO.LASTNAME = lastName;
+                userinfo.TUSERSINFO.LASTNAME2 = lastName2;
+                userinfo.EMAIL = email;
+                userinfo.CELLPHONE = cellphone;
+                this._userRepository.Update(userinfo);
+                var result = this._userRepository.Save();
+                if (result.Success)
+                {
+                   return new Response(true, "actualización datos exitoso.");
+                }
+                return new Response(false, "Ha ocurrido un error al actualizar datos.");
+            }
+            catch(Exception ex)
+            {
+                return new Response(false, "Ha ocurrido un error al actualizar datos." + ex);
+            }
         }
 
         //public async Task<Response> GenerateContract(Dictionary<string, object> data)

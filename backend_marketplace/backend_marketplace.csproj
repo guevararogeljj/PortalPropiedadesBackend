@@ -6,6 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Production' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'QA' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Development' " />
   <ItemGroup>
     <Content Remove="appsettings.Production.json" />
   </ItemGroup>
