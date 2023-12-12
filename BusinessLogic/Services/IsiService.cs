@@ -64,7 +64,7 @@ namespace BusinessLogic.Services
                 {
                     var status = result[fieldstatus].ToString();
 
-                    issold = soldstatus.Any(x => x.Equals(status));
+                    issold = soldstatus.Any(x => x.Equals(status));                    
 
                     return issold;
                 }

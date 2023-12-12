@@ -1,13 +1,17 @@
 ﻿using BusinessLogic.Contracts;
 using BusinessLogic.Models;
+using Contracts.Request;
 using DataSource;
 using DataSource.Contracts;
 using DataSource.Entities;
 using DataSource.Expressions;
+using DataSource.Interfaces;
+using DataSource.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System.Collections;
+using System.Drawing.Printing;
 
 namespace BusinessLogic.Services
 {
@@ -22,6 +26,7 @@ namespace BusinessLogic.Services
         private readonly IParametersRepository _parametersRepository;
         private readonly IIsiService _isiService;
         private readonly IConfiguration _configuration;
+        private readonly IPropertiesRespository _propertiesRespository;
         private PropertiesExpression _whereExpression;
         public PropertiesService(AppDbContext context, 
             IUserPropertiesRepository userPropertiesRepository, 
@@ -29,6 +34,7 @@ namespace BusinessLogic.Services
             IUserRepository userRepository, IAzureBlobService azureSasTokenService, 
             IAzureBlobService azureBlobService, IParametersRepository parametersRepository,
             IIsiService isiService, IConfiguration configuration,
+            IPropertiesRespository propertiesRespository,
             ILogger<PropertiesService> logger) : base(context)
         {
             this._azureSasTokenService = azureSasTokenService;
@@ -39,6 +45,7 @@ namespace BusinessLogic.Services
             this._parametersRepository = parametersRepository;
             this._isiService = isiService;
             this._configuration = configuration;
+            _propertiesRespository = propertiesRespository;
             _logger = logger;
             _whereExpression = new PropertiesExpression();
         }
@@ -72,92 +79,101 @@ namespace BusinessLogic.Services
                 thumbnail = "data:image/jpg;base64," + this._azureBlobService.ImageByPathToBase64(x.TFILES.Where(x => x.PREVIEW == 1).FirstOrDefault().URI, CONTAINERIMAGES).Result,
             }).ToList();
         }
-
-        public async Task<Response> PropertiesRange(int? index, int? items, int? order, int? propertytype, int? state, int? city, decimal? price, int? rooms, int? bathrooms, int? proceduralStage)
+        public async Task<ResponseBase<PropertyPaged[]>> PropertiesRange(PropertiesFilterDto request)
         {
+            ResponseBase<PropertyPaged[]> response = new ResponseBase<PropertyPaged[]>();
+
             try
             {
-                _logger.LogInformation($"Inicia Propierties Range {DateTime.Now}");
+                if (request.pageNumber < 0)
+                    request.pageNumber = 1;
+                if (request.pageSize < 0)
+                    request.pageNumber = 9;
 
-                CreatePredicate(_whereExpression, propertytype, state, city, price, rooms, bathrooms, proceduralStage);
+                List<SP_Get_Properties_Filter> listProperties;
+                int totalRecords = 0;
 
-                List<TPROPERTIES> result = _propertyRepository.InstanceList();
-                int? countItems = null;
+                var propertiesList = !request.oportunity
+                    ? await _propertiesRespository.Get(request)
+                    : request.isCarrusel
+                    ? await _propertiesRespository.GetFirstOpportunities()
+                    : await _propertiesRespository.Getpportunities(request);
 
-                var whereExpression = !_whereExpression.Expression().Parameters.Where(x => x.Name == "f").Any() ? _whereExpression.Expression() : null;
+                listProperties = propertiesList.properties;
+                totalRecords = propertiesList.totalRecords;
 
-                result.AddRange(_propertyRepository.PageSizeAvailableProperties(index, items, whereExpression));
-                countItems = _propertyRepository.CountAvailableProperties(index, items, whereExpression);
-
-                _logger.LogInformation($"Número de Propiedades obtenidas {countItems} {DateTime.Now}");
-
-                _logger.LogInformation($"Se agrega lista paginada {DateTime.Now}");
-
-                result = (order == 1) ? result.OrderByDescending(x => x.SALEPRICE).ToList() :
-                           (order == 2) ? result.OrderBy(x => x.SALEPRICE).ToList() :
-                                         result.ToList();
-
-                _logger.LogInformation($"Se ordena lista {DateTime.Now}");               
+                _logger.LogInformation($"Se obtiene Lista de propiedades");
+                _logger.LogInformation($"Número de Propiedades obtenidas {totalRecords}");
 
                 _logger.LogInformation($"Inicia mapeo de propiedades {DateTime.Now}");
 
                 string containerImage = _parametersRepository.GetParameter<string>("BLOBSTORAGE", "CONTAINERNAMEIMAGES");
 
-                PropertyPaged[] properties = await Task.WhenAll(result.Select(async x => new PropertyPaged()
+                var propertyTasks = listProperties.Select(async x => new PropertyPaged()
                 {
-                    Title = x.IDPROCEDURALSTAGENavigation.TCTITLES.DESCRIPTION,
-                    CreditNumber = x.ID,
-                    Id = x.CREDITNUMBER,
-                    Rooms = x.IDBEDROOMNavigation.DESCRIPTION,
-                    Bathrooms = x.IDBATHROOMNavigation.DESCRIPTION,
-                    ConstructionSize = x.CONSTRUCTIONSIZE,
-                    LotSize = x.LOTSIZE,
-                    Price = x.SALEPRICE,
-                    ParkingSpaces = x.IDPARKINGSPACENavigation.DESCRIPTION,
-                    Settlement = x.TADDRESSES.SETTLEMENT,
-                    City = x.TADDRESSES.IDCITYv2Navigation.DESCRIPTION,
-                    State = x.TADDRESSES.IDCITYv2Navigation.CODESTATENavigation.DESCRIPTION,
-                    Thumbnail = "data:image/jpg;base64," + await _azureBlobService.ImageByPathToBase64(x.TFILES.Where(x => x.PREVIEW == 1).FirstOrDefault().PATH, containerImage),
+                    Title = x.Title,
+                    CreditNumber = x.CreditNumber,
+                    Id = x.Id,
+                    Rooms = x.Rooms,
+                    Bathrooms = x.Bathrooms,
+                    ConstructionSize = x.ConstructionSize,
+                    LotSize = x.LotSize,
+                    Price = x.Price,
+                    ParkingSpaces = x.ParkingSpaces,
+                    Settlement = x.Settlement,
+                    City = x.City,
+                    State = x.State,
+                    Thumbnail = "data:image/jpg;base64," + await _azureBlobService.ImageByPathToBase64(x.pathFile, containerImage),
                     Favorite = false,
+                }).ToArray();
 
-                }).Where(x => x != null).ToList());
+                PropertyPaged[] properties = await Task.WhenAll(propertyTasks);
 
-                _logger.LogInformation($"Finaliza mapeo de propiedades {DateTime.Now}");
+                _logger.LogInformation($"Finaliza mapeo de propiedades");
 
-                _logger.LogInformation($"Se inicia obtencion de token servicio isi {DateTime.Now}");
+                _logger.LogInformation($"Se inicia obtencion de token servicio isi");
 
                 string token = await _isiService.GenerateToken();
 
-                _logger.LogInformation($"Se obtiene de token servicio isi {DateTime.Now}");
+                _logger.LogInformation($"Se obtiene de token servicio isi");
 
-                _logger.LogInformation($"Inicia obtención de status de credito {DateTime.Now}");
+                _logger.LogInformation($"Inicia obtención de status de credito");
 
                 List<string> soldstatus = _parametersRepository.GetParameters<string>("ISISERVICESTATUSVENDIDO", "ESTATUSVENDIDO");
 
-                foreach (var item in properties)
+                var statusTasks = properties.Select(async item =>
                 {
                     item.Sold = await _isiService.StatusSoldByCredit(item.Id, token, soldstatus);
-                }
+                }).ToArray();
+
+                await Task.WhenAll(statusTasks);
 
                 _logger.LogInformation($"Finaliza obtención de status de credito {DateTime.Now}");
 
-                _logger.LogInformation($"**************OK {DateTime.Now}");
+                _logger.LogInformation($"****OK {DateTime.Now}");
 
-                return new Response(true, new PropertiesPaged()
-                {
-                    Items = properties.ToList(),
-                    Count = countItems,
-                    PageSize = items,
-                    Page = index
-                });
+                response.data = properties;
+                response.pageSize = request.pageSize;
+                response.pageNumber = request.pageNumber;
+                response.totalRecords = totalRecords;
+                response.totalPage = (int)Math.Ceiling((double)totalRecords / request.pageSize);
+                response.Succes = true;
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 _logger.LogError(ex.Message, ex);
                 _logger.LogError(ex.Message);
 
-                return new Response(false, "No se pudo obtener la información.");
+                response.Succes = false;
+                response.Error = new ErrorBase()
+                {
+                    messageClient = "Hubo un error al obtner los datos trate de nuevo",
+                    messageError = ex.Message,
+                    messageInnerError = ex.InnerException != null ? ex.InnerException.ToString() : "Sin error a mostrar"
+                };
+
             }
+            return response;
         }
 
         private void CreatePredicate(PropertiesExpression predicate, int? propertytype, int? state, int? city, decimal? price, int? rooms, int? bathrooms, int? proceduralStage)

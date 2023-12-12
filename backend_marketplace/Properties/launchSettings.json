@@ -34,7 +34,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "QA"
       },
-      "applicationUrl": "https://192.168.100.34:7126;http://localhost:5126",
+      "applicationUrl": "https://localhost:7126;http://localhost:5126",
       "dotnetRunMessages": true
     },
     "Development": {
