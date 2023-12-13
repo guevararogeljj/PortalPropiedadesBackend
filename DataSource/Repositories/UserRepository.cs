@@ -112,8 +112,16 @@ namespace DataSource.Repositories
 
         public async Task <TUSERS> FindByCellphoneOrEmail(TUSERS entity)
         {
-            return await this._dbset.Include(x => x.TUSERSINFO)
-                .Where(x => x.EMAIL!.Equals(entity!.EMAIL) || x.CELLPHONE!.Equals(entity!.CELLPHONE)).FirstOrDefaultAsync();
+            var data = new TUSERS();
+            data = await this._dbset.Include(x => x.TUSERSINFO)
+                .Where(x => x.CELLPHONE!.Equals(entity.CELLPHONE!)).FirstOrDefaultAsync();
+           if(data is null)
+                data = await this._dbset.Include(x => x.TUSERSINFO)
+                .Where(x => x.EMAIL!.Equals(entity.EMAIL!)).FirstOrDefaultAsync();
+
+            return data!;
+            //return await this._dbset.Include(x => x.TUSERSINFO)
+                //.Where(x => x.EMAIL!.Equals(entity.EMAIL!) || x.CELLPHONE!.Equals(entity.CELLPHONE!)).FirstOrDefaultAsync();
         }
     }
 }

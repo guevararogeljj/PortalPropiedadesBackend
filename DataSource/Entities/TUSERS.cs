@@ -42,5 +42,8 @@ namespace DataSource.Entities
         public virtual ICollection<TRUSERSTATUSREGISTER> TRUSERSTATUSREGISTER { get; set; }
         public virtual ICollection<TUSERSETTINGS> TUSERSETTINGS { get; set; }
         public virtual ICollection<WEBDOXREQUEST> WEBDOXREQUEST { get; set; }
+
+        public string? EMAILSECONDARY { get; set; }
+        public string? CELLPHONESECONDARY { get; set; }
     }
 }

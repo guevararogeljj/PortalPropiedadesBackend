@@ -31,5 +31,6 @@ namespace DataSource.Entities
         public virtual TCMARITALSTATUS? IDMARITALSTATUSNavigation { get; set; }
         public virtual TCOCCUPATIONS? IDOCCUPATIONNavigation { get; set; }
         public virtual TUSERS? IDUSERNavigation { get; set; }
+
     }
 }

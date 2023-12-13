@@ -166,6 +166,8 @@ namespace BusinessLogic.Services
                     gender = userinfo.TUSERSINFO.IDGENDERNavigation == null ? "" : userinfo.TUSERSINFO.IDGENDERNavigation.DESCRIPTION,
                     email = userinfo.EMAIL == null ? "" : userinfo.EMAIL,
                     cellphone = userinfo.CELLPHONE!,//$"{userinfo.CELLPHONE![0..3]}-{userinfo.CELLPHONE[3..6]}-{userinfo.CELLPHONE[6..]}",
+                    emailSecondary = userinfo.EMAILSECONDARY,
+                    cellphoneSecondary = userinfo.CELLPHONESECONDARY
                 };
 
                 var response = new Response(true, result);
@@ -183,6 +185,7 @@ namespace BusinessLogic.Services
         {
             var userIntance = this._userRepository.InstanceObject();
             userIntance.CELLPHONE = (string)credentials["Cellphone"];
+            var code = (string)credentials["Code"];
             var userinfo = this._userRepository.FindByCellphone(userIntance);
 
             if (userinfo == null || userinfo.TUSERSINFO == null)
@@ -199,6 +202,20 @@ namespace BusinessLogic.Services
             {
                 return new Response(false, "El password actual no coincide");
             }
+
+
+            var resultService = await this._smsService.ValidateSmsOtp(userIntance.CELLPHONE, code);
+
+            if (resultService.ContainsKey("status") && resultService["status"].ToString()!.ToLower() == "true")
+            {
+                return new Response(true, "Se ha valido correctamente el nuevo número telefónico");
+            }
+            else
+            {
+
+                return new Response(false, "La validación no ha sido exitosa");
+            }
+
 
             var encryptNewPassword = credentials["NewPassword"].ToString();
             //var decryptNewPassword = this.DecodeString(encryptNewPassword, PrivateKeyFilePath(_configuration.GetValue<string>("Encryption:PrivateKeyFileName")));
@@ -673,6 +690,8 @@ namespace BusinessLogic.Services
                 var lastName2 = (string)data["Lastname2"];
                 var email = (string)data["Email"];
                 var cellphone = (string)data["Cellphone"];
+                var emailSecondary = (string)data["EmailSecondary"];
+                var cellphoneSecondary = (string)data["CellphoneSecondary"];
                 var userIntance = this._userRepository!.InstanceObject();
                 userIntance.EMAIL = (string)data["Email"];
                 userIntance.CELLPHONE = (string)data["Cellphone"];
@@ -682,11 +701,13 @@ namespace BusinessLogic.Services
                 {
                   return new Response(false, "Informacion no valida");
                 }
-                userinfo.TUSERSINFO.NAMES = name;
-                userinfo.TUSERSINFO.LASTNAME = lastName;
-                userinfo.TUSERSINFO.LASTNAME2 = lastName2;
-                userinfo.EMAIL = email;
-                userinfo.CELLPHONE = cellphone;
+                userinfo.TUSERSINFO.NAMES = string.IsNullOrEmpty(name) ? userinfo.TUSERSINFO.NAMES : name;
+                userinfo.TUSERSINFO.LASTNAME = string.IsNullOrEmpty(lastName) ? userinfo.TUSERSINFO.LASTNAME : lastName;
+                userinfo.TUSERSINFO.LASTNAME2 = string.IsNullOrEmpty(lastName2) ? userinfo.TUSERSINFO.LASTNAME2 : lastName2;
+                userinfo.EMAIL = string.IsNullOrEmpty(email) ? userinfo.EMAIL : email;
+                userinfo.CELLPHONE = string.IsNullOrEmpty(cellphone) ? userinfo.CELLPHONE : cellphone;
+                userinfo.EMAILSECONDARY = string.IsNullOrEmpty(emailSecondary) ? userinfo.EMAILSECONDARY : emailSecondary;
+                userinfo.CELLPHONESECONDARY = string.IsNullOrEmpty(cellphoneSecondary) ? userinfo.CELLPHONESECONDARY : cellphoneSecondary;
                 this._userRepository.Update(userinfo);
                 var result = this._userRepository.Save();
                 if (result.Success)
