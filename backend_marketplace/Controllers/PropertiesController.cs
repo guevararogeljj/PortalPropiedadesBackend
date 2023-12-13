@@ -1,5 +1,6 @@
 ﻿using backend_marketplace.Models;
 using BusinessLogic.Contracts;
+using Contracts.Request;
 using Google.Apis.Gmail.v1.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -19,12 +20,16 @@ namespace backend_marketplace.Controllers
             this._propertiesService = _propertiesService;
         }
 
-        [HttpGet("range")]
-        public async Task<IActionResult> RangeProperties(int? index, int? items, int? order, int? propertytype, int? state, int? city, decimal? price, int? rooms, int? bathrooms, int? proceduralStage)
+        [HttpPost("range")]
+        public async Task<IActionResult> RangeProperties([FromBody]PropertiesFilterDto request)
         {
+
             _logger.LogInformation($"Ingreso al api range");
-            var result = await _propertiesService.PropertiesRange(index, items, order, propertytype, state, city, price, rooms, bathrooms, proceduralStage);
-            return new JsonResult(result);
+            var result = await _propertiesService.PropertiesRange(request);
+            if(result.Succes)
+                return Ok(result);
+            else
+                return StatusCode(StatusCodes.Status500InternalServerError, result);
         }
 
         [HttpGet("details")]

@@ -1,4 +1,5 @@
 ﻿using DataSource.Contracts;
+using DataSource.Interfaces;
 using DataSource.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -8,6 +9,7 @@ namespace DataSource
     {
         public static void AddRegistration(this IServiceCollection services)
         {
+            services.AddScoped<IPropertiesRespository, PropertiesRespository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IContactRepository, ContactRepository>();
             services.AddScoped<IUserInfoRepository, UserInfoRepository>();

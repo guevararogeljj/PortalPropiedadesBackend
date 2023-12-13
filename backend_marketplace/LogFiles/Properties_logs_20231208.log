@@ -1,0 +1,2712 @@
+[08/12/2023 02:00:21 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:00:21 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:00:21 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:00:21 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "Production"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:00:21 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:00:23 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "GET"
+RequestPath = "/swagger/index.html"
+StatusCode = 404
+Elapsed = 383.7398
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[08/12/2023 02:07:36 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:07:36 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:07:36 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:07:36 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:07:36 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:08:22 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:08:22 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:08:22 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:08:22 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:08:22 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:08:50 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "6aefc41c-8c61-46ff-ba1d-5205a184f8d8"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOJCCMFHO:00000009"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOJCCMFHO"
+
+[08/12/2023 02:08:55 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "6aefc41c-8c61-46ff-ba1d-5205a184f8d8"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOJCCMFHO:00000009"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOJCCMFHO"
+
+[08/12/2023 02:08:58 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "6aefc41c-8c61-46ff-ba1d-5205a184f8d8"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOJCCMFHO:00000009"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOJCCMFHO"
+
+[08/12/2023 02:09:03 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "6aefc41c-8c61-46ff-ba1d-5205a184f8d8"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOJCCMFHO:00000009"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOJCCMFHO"
+
+[08/12/2023 02:09:45 a. m. -06:00] Error: "Error al obtener las propiedades"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "6aefc41c-8c61-46ff-ba1d-5205a184f8d8"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOJCCMFHO:00000009"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOJCCMFHO"
+
+[08/12/2023 02:09:45 a. m. -06:00] Error: "Error al obtener las propiedades"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "6aefc41c-8c61-46ff-ba1d-5205a184f8d8"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOJCCMFHO:00000009"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOJCCMFHO"
+
+[08/12/2023 02:09:45 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "POST"
+RequestPath = "/api/properties/range"
+StatusCode = 200
+Elapsed = 56985.6775
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[08/12/2023 02:10:21 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:10:21 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:10:21 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:10:21 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:10:21 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:10:51 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "0643638b-cd3f-4605-ad3e-bcac5f894560"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOKFP5098:00000009"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOKFP5098"
+
+[08/12/2023 02:10:55 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "0643638b-cd3f-4605-ad3e-bcac5f894560"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOKFP5098:00000009"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOKFP5098"
+
+[08/12/2023 02:10:55 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "0643638b-cd3f-4605-ad3e-bcac5f894560"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOKFP5098:00000009"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOKFP5098"
+
+[08/12/2023 02:10:55 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "0643638b-cd3f-4605-ad3e-bcac5f894560"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOKFP5098:00000009"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOKFP5098"
+
+[08/12/2023 02:10:55 a. m. -06:00] Error: "Error al obtener las propiedades"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "0643638b-cd3f-4605-ad3e-bcac5f894560"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOKFP5098:00000009"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOKFP5098"
+
+[08/12/2023 02:10:55 a. m. -06:00] Error: "Error al obtener las propiedades"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "0643638b-cd3f-4605-ad3e-bcac5f894560"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOKFP5098:00000009"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOKFP5098"
+
+[08/12/2023 02:10:55 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "POST"
+RequestPath = "/api/properties/range"
+StatusCode = 200
+Elapsed = 6863.5191
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[08/12/2023 02:11:43 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "61565d99-baef-4aa4-9534-29572059914b"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOKFP5098:00000013"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOKFP5098"
+
+[08/12/2023 02:11:43 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "61565d99-baef-4aa4-9534-29572059914b"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOKFP5098:00000013"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOKFP5098"
+
+[08/12/2023 02:11:43 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "61565d99-baef-4aa4-9534-29572059914b"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOKFP5098:00000013"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOKFP5098"
+
+[08/12/2023 02:11:43 a. m. -06:00] Error: "Error al obtener las propiedades"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "61565d99-baef-4aa4-9534-29572059914b"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOKFP5098:00000013"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOKFP5098"
+
+[08/12/2023 02:11:43 a. m. -06:00] Error: "Error al obtener las propiedades"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "61565d99-baef-4aa4-9534-29572059914b"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOKFP5098:00000013"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOKFP5098"
+
+[08/12/2023 02:11:43 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "POST"
+RequestPath = "/api/properties/range"
+StatusCode = 200
+Elapsed = 146.8596
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[08/12/2023 02:11:54 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "61565d99-baef-4aa4-9534-29572059914b"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOKFP5098:00000015"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOKFP5098"
+
+[08/12/2023 02:11:56 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "61565d99-baef-4aa4-9534-29572059914b"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOKFP5098:00000015"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOKFP5098"
+
+[08/12/2023 02:12:14 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "61565d99-baef-4aa4-9534-29572059914b"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOKFP5098:00000015"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOKFP5098"
+
+[08/12/2023 02:20:10 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:20:10 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:20:10 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:20:10 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:20:10 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:21:35 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "145cc8fe-0389-4dbf-9fb1-17d201cfaa55"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOPVG29SB:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOPVG29SB"
+
+[08/12/2023 02:21:41 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "145cc8fe-0389-4dbf-9fb1-17d201cfaa55"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOPVG29SB:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOPVG29SB"
+
+[08/12/2023 02:21:43 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "145cc8fe-0389-4dbf-9fb1-17d201cfaa55"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOPVG29SB:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOPVG29SB"
+
+[08/12/2023 02:22:22 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "145cc8fe-0389-4dbf-9fb1-17d201cfaa55"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOPVG29SB:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOPVG29SB"
+
+[08/12/2023 02:29:09 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:29:09 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:29:09 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:29:09 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:29:09 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:29:19 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "b523a317-3725-41d6-a426-2f364a2bf2d6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOV01VLQ1:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOV01VLQ1"
+
+[08/12/2023 02:29:24 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "b523a317-3725-41d6-a426-2f364a2bf2d6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOV01VLQ1:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOV01VLQ1"
+
+[08/12/2023 02:29:26 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "b523a317-3725-41d6-a426-2f364a2bf2d6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOV01VLQ1:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOV01VLQ1"
+
+[08/12/2023 02:29:29 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "b523a317-3725-41d6-a426-2f364a2bf2d6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOV01VLQ1:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOV01VLQ1"
+
+[08/12/2023 02:30:33 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:30:34 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:30:34 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:30:34 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:30:34 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:30:44 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "0845ae2e-b37e-458b-a475-567eff425d10"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOVP63N9F:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOVP63N9F"
+
+[08/12/2023 02:30:47 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "0845ae2e-b37e-458b-a475-567eff425d10"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOVP63N9F:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOVP63N9F"
+
+[08/12/2023 02:30:49 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "0845ae2e-b37e-458b-a475-567eff425d10"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOVP63N9F:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOVP63N9F"
+
+[08/12/2023 02:30:54 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "0845ae2e-b37e-458b-a475-567eff425d10"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNOVP63N9F:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNOVP63N9F"
+
+[08/12/2023 02:35:13 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:35:13 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:35:13 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:35:13 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:35:13 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:35:22 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "8bc680cf-0a47-4605-892f-45d07428d32f"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNP2CJ98OP:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNP2CJ98OP"
+
+[08/12/2023 02:35:32 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "8bc680cf-0a47-4605-892f-45d07428d32f"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNP2CJ98OP:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNP2CJ98OP"
+
+[08/12/2023 02:35:34 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "8bc680cf-0a47-4605-892f-45d07428d32f"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNP2CJ98OP:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNP2CJ98OP"
+
+[08/12/2023 02:35:38 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "8bc680cf-0a47-4605-892f-45d07428d32f"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNP2CJ98OP:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNP2CJ98OP"
+
+[08/12/2023 02:37:30 a. m. -06:00] Error: "Error al obtener las propiedades"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "8bc680cf-0a47-4605-892f-45d07428d32f"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNP2CJ98OP:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNP2CJ98OP"
+
+[08/12/2023 02:37:30 a. m. -06:00] Error: "Error al obtener las propiedades"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "8bc680cf-0a47-4605-892f-45d07428d32f"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNP2CJ98OP:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNP2CJ98OP"
+
+[08/12/2023 02:37:30 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "POST"
+RequestPath = "/api/properties/range"
+StatusCode = 200
+Elapsed = 129908.0617
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[08/12/2023 02:39:05 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:39:05 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:39:05 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:39:05 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:39:05 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:39:15 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "6630b613-53d0-47b7-8686-6cf4832deeeb"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNP4HJRDJ1:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNP4HJRDJ1"
+
+[08/12/2023 02:39:19 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "6630b613-53d0-47b7-8686-6cf4832deeeb"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNP4HJRDJ1:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNP4HJRDJ1"
+
+[08/12/2023 02:39:21 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "6630b613-53d0-47b7-8686-6cf4832deeeb"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNP4HJRDJ1:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNP4HJRDJ1"
+
+[08/12/2023 02:39:25 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "6630b613-53d0-47b7-8686-6cf4832deeeb"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNP4HJRDJ1:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNP4HJRDJ1"
+
+[08/12/2023 02:41:36 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:41:36 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:41:36 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:41:36 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:41:36 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:41:45 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "ac613f82-4d70-47ca-a207-36fc177e6995"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNP5URHG57:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNP5URHG57"
+
+[08/12/2023 02:41:51 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "ac613f82-4d70-47ca-a207-36fc177e6995"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNP5URHG57:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNP5URHG57"
+
+[08/12/2023 02:41:53 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "ac613f82-4d70-47ca-a207-36fc177e6995"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNP5URHG57:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNP5URHG57"
+
+[08/12/2023 02:41:56 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "ac613f82-4d70-47ca-a207-36fc177e6995"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNP5URHG57:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNP5URHG57"
+
+[08/12/2023 02:51:28 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:51:28 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:51:28 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:51:28 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:51:28 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 02:52:10 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "18a280fe-3d9b-4c4f-8651-fc7584a7e05b"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPBF5CLVE:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPBF5CLVE"
+
+[08/12/2023 02:52:14 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "18a280fe-3d9b-4c4f-8651-fc7584a7e05b"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPBF5CLVE:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPBF5CLVE"
+
+[08/12/2023 02:52:16 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "18a280fe-3d9b-4c4f-8651-fc7584a7e05b"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPBF5CLVE:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPBF5CLVE"
+
+[08/12/2023 02:52:22 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "18a280fe-3d9b-4c4f-8651-fc7584a7e05b"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPBF5CLVE:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPBF5CLVE"
+
+[08/12/2023 03:07:29 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:07:29 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:07:29 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:07:29 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:07:29 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:07:41 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "d1161ae4-e0ed-4306-bc9c-9c49c18ba6e6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPKDCPS7N:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPKDCPS7N"
+
+[08/12/2023 03:07:46 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "d1161ae4-e0ed-4306-bc9c-9c49c18ba6e6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPKDCPS7N:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPKDCPS7N"
+
+[08/12/2023 03:07:49 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "d1161ae4-e0ed-4306-bc9c-9c49c18ba6e6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPKDCPS7N:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPKDCPS7N"
+
+[08/12/2023 03:07:52 a. m. -06:00] Error: "Failed executing DbCommand ({elapsed}ms) [Parameters=[{parameters}], CommandType='{commandType}', CommandTimeout='{commandTimeout}']{newLine}{commandText}"
+elapsed = "82"
+parameters = ""
+commandType = Text
+commandTimeout = 30
+newLine = "
+"
+commandText = "SP_Get_Properties_Filter , , , , , , , 10, 1, 0 OUTPUT"
+EventId = { Id: 20102, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandError" }
+SourceContext = "Microsoft.EntityFrameworkCore.Database.Command"
+ActionId = "d1161ae4-e0ed-4306-bc9c-9c49c18ba6e6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPKDCPS7N:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPKDCPS7N"
+
+[08/12/2023 03:07:52 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ','.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__188_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:7a3cefae-1a5e-48a4-9f9a-97ca1690d41e
+Error Number:102,State:1,Class:15
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ','.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__188_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:7a3cefae-1a5e-48a4-9f9a-97ca1690d41e
+Error Number:102,State:1,Class:15"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "d1161ae4-e0ed-4306-bc9c-9c49c18ba6e6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPKDCPS7N:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPKDCPS7N"
+
+[08/12/2023 03:08:08 a. m. -06:00] Error: "Error al obtener las propiedades"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "d1161ae4-e0ed-4306-bc9c-9c49c18ba6e6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPKDCPS7N:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPKDCPS7N"
+
+[08/12/2023 03:08:08 a. m. -06:00] Error: "Error al obtener las propiedades"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "d1161ae4-e0ed-4306-bc9c-9c49c18ba6e6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPKDCPS7N:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPKDCPS7N"
+
+[08/12/2023 03:08:08 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "POST"
+RequestPath = "/api/properties/range"
+StatusCode = 200
+Elapsed = 29708.9732
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[08/12/2023 03:08:35 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "d1161ae4-e0ed-4306-bc9c-9c49c18ba6e6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPKDCPS7N:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPKDCPS7N"
+
+[08/12/2023 03:08:37 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "d1161ae4-e0ed-4306-bc9c-9c49c18ba6e6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPKDCPS7N:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPKDCPS7N"
+
+[08/12/2023 03:08:40 a. m. -06:00] Error: "Failed executing DbCommand ({elapsed}ms) [Parameters=[{parameters}], CommandType='{commandType}', CommandTimeout='{commandTimeout}']{newLine}{commandText}"
+elapsed = "41"
+parameters = ""
+commandType = Text
+commandTimeout = 30
+newLine = "
+"
+commandText = "SP_Get_Properties_Filter , , , , , , , 10, 1, 0 OUTPUT"
+EventId = { Id: 20102, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandError" }
+SourceContext = "Microsoft.EntityFrameworkCore.Database.Command"
+ActionId = "d1161ae4-e0ed-4306-bc9c-9c49c18ba6e6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPKDCPS7N:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPKDCPS7N"
+
+[08/12/2023 03:08:40 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ','.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__188_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:7a3cefae-1a5e-48a4-9f9a-97ca1690d41e
+Error Number:102,State:1,Class:15
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "Microsoft.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ','.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__188_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:7a3cefae-1a5e-48a4-9f9a-97ca1690d41e
+Error Number:102,State:1,Class:15"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "d1161ae4-e0ed-4306-bc9c-9c49c18ba6e6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPKDCPS7N:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPKDCPS7N"
+
+[08/12/2023 03:11:40 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:11:41 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:11:41 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:11:41 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:11:41 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:11:50 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "35dff1ed-2404-4be4-a228-aa2c58312f97"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPMODNLTG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPMODNLTG"
+
+[08/12/2023 03:11:54 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "35dff1ed-2404-4be4-a228-aa2c58312f97"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPMODNLTG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPMODNLTG"
+
+[08/12/2023 03:11:56 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "35dff1ed-2404-4be4-a228-aa2c58312f97"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPMODNLTG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPMODNLTG"
+
+[08/12/2023 03:12:00 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "35dff1ed-2404-4be4-a228-aa2c58312f97"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPMODNLTG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPMODNLTG"
+
+[08/12/2023 03:13:15 a. m. -06:00] Error: "Error al obtener las propiedades"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "35dff1ed-2404-4be4-a228-aa2c58312f97"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPMODNLTG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPMODNLTG"
+
+[08/12/2023 03:13:15 a. m. -06:00] Error: "Error al obtener las propiedades"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "35dff1ed-2404-4be4-a228-aa2c58312f97"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPMODNLTG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPMODNLTG"
+
+[08/12/2023 03:13:15 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "POST"
+RequestPath = "/api/properties/range"
+StatusCode = 200
+Elapsed = 87240.0355
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[08/12/2023 03:14:38 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:14:39 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:14:39 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:14:39 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:14:39 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:14:46 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "ded42cf2-1cda-4bbe-ab9d-ed3ec88fba6a"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPODIP04B:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPODIP04B"
+
+[08/12/2023 03:14:50 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "ded42cf2-1cda-4bbe-ab9d-ed3ec88fba6a"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPODIP04B:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPODIP04B"
+
+[08/12/2023 03:14:52 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "ded42cf2-1cda-4bbe-ab9d-ed3ec88fba6a"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPODIP04B:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPODIP04B"
+
+[08/12/2023 03:14:56 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "ded42cf2-1cda-4bbe-ab9d-ed3ec88fba6a"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPODIP04B:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPODIP04B"
+
+[08/12/2023 03:15:34 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:15:34 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:15:34 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:15:34 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:15:34 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:15:41 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "b3973161-2873-4acf-b40d-631d5e4af11d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPOU7SUCD:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPOU7SUCD"
+
+[08/12/2023 03:15:45 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "b3973161-2873-4acf-b40d-631d5e4af11d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPOU7SUCD:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPOU7SUCD"
+
+[08/12/2023 03:15:47 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "b3973161-2873-4acf-b40d-631d5e4af11d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPOU7SUCD:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPOU7SUCD"
+
+[08/12/2023 03:15:50 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "b3973161-2873-4acf-b40d-631d5e4af11d"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPOU7SUCD:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPOU7SUCD"
+
+[08/12/2023 03:16:30 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:16:30 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:16:30 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:16:30 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:16:30 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:16:34 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "d0ac434c-3492-4c02-b071-d8c73069fc97"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPPEJE4SU:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPPEJE4SU"
+
+[08/12/2023 03:16:39 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "d0ac434c-3492-4c02-b071-d8c73069fc97"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPPEJE4SU:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPPEJE4SU"
+
+[08/12/2023 03:16:40 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "d0ac434c-3492-4c02-b071-d8c73069fc97"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPPEJE4SU:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPPEJE4SU"
+
+[08/12/2023 03:16:44 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "d0ac434c-3492-4c02-b071-d8c73069fc97"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPPEJE4SU:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPPEJE4SU"
+
+[08/12/2023 03:21:16 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:21:16 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:21:16 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:21:16 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:21:16 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:21:23 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "286ee5b5-cf38-454f-a414-7136ddb722cd"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPS40C4NR:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPS40C4NR"
+
+[08/12/2023 03:21:26 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "286ee5b5-cf38-454f-a414-7136ddb722cd"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPS40C4NR:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPS40C4NR"
+
+[08/12/2023 03:21:29 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "286ee5b5-cf38-454f-a414-7136ddb722cd"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPS40C4NR:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPS40C4NR"
+
+[08/12/2023 03:21:50 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "286ee5b5-cf38-454f-a414-7136ddb722cd"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNPS40C4NR:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNPS40C4NR"
+
+[08/12/2023 03:33:54 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:33:54 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:33:54 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:33:54 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:33:54 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:34:23 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "8cbb0b68-acd5-4f3b-a13f-b7f872b4c96e"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ35R2U1K:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ35R2U1K"
+
+[08/12/2023 03:34:29 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "8cbb0b68-acd5-4f3b-a13f-b7f872b4c96e"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ35R2U1K:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ35R2U1K"
+
+[08/12/2023 03:34:30 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "8cbb0b68-acd5-4f3b-a13f-b7f872b4c96e"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ35R2U1K:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ35R2U1K"
+
+[08/12/2023 03:34:34 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at lambda_method77(Closure , QueryContext , DbDataReader , Int32[] )
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at lambda_method77(Closure , QueryContext , DbDataReader , Int32[] )
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "8cbb0b68-acd5-4f3b-a13f-b7f872b4c96e"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ35R2U1K:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ35R2U1K"
+
+[08/12/2023 03:36:06 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:36:07 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:36:07 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:36:07 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:36:07 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:36:13 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "19a14dba-bee0-4e26-926b-096a0310a8df"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ4DCHNJK:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ4DCHNJK"
+
+[08/12/2023 03:36:19 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "19a14dba-bee0-4e26-926b-096a0310a8df"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ4DCHNJK:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ4DCHNJK"
+
+[08/12/2023 03:36:21 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "19a14dba-bee0-4e26-926b-096a0310a8df"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ4DCHNJK:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ4DCHNJK"
+
+[08/12/2023 03:36:24 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: Unable to cast object of type 'System.Int64' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method77(Closure , QueryContext , DbDataReader , Int32[] )
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: Unable to cast object of type 'System.Int64' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method77(Closure , QueryContext , DbDataReader , Int32[] )
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "19a14dba-bee0-4e26-926b-096a0310a8df"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ4DCHNJK:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ4DCHNJK"
+
+[08/12/2023 03:37:03 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:37:03 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:37:03 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:37:03 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:37:03 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:37:11 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "f5045db3-14d1-4b92-8456-25e42bc2ba18"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ4U5RP1A:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ4U5RP1A"
+
+[08/12/2023 03:37:17 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "f5045db3-14d1-4b92-8456-25e42bc2ba18"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ4U5RP1A:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ4U5RP1A"
+
+[08/12/2023 03:37:19 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "f5045db3-14d1-4b92-8456-25e42bc2ba18"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ4U5RP1A:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ4U5RP1A"
+
+[08/12/2023 03:37:22 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: Unable to cast object of type 'System.Int64' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method77(Closure , QueryContext , DbDataReader , Int32[] )
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: Unable to cast object of type 'System.Int64' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at lambda_method77(Closure , QueryContext , DbDataReader , Int32[] )
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "f5045db3-14d1-4b92-8456-25e42bc2ba18"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ4U5RP1A:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ4U5RP1A"
+
+[08/12/2023 03:38:41 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:38:41 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:38:41 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:38:41 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:38:41 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:38:50 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "a19b4697-c9ea-4d56-af0b-d1c8d1804ea6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ5RC2U3T:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ5RC2U3T"
+
+[08/12/2023 03:38:52 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "a19b4697-c9ea-4d56-af0b-d1c8d1804ea6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ5RC2U3T:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ5RC2U3T"
+
+[08/12/2023 03:38:55 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: Unable to cast object of type 'System.Decimal' to type 'System.Double'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Double()
+   at lambda_method77(Closure , QueryContext , DbDataReader , Int32[] )
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: Unable to cast object of type 'System.Decimal' to type 'System.Double'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Double()
+   at lambda_method77(Closure , QueryContext , DbDataReader , Int32[] )
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "a19b4697-c9ea-4d56-af0b-d1c8d1804ea6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ5RC2U3T:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ5RC2U3T"
+
+[08/12/2023 03:41:42 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:41:42 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:41:42 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:41:42 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:41:42 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:41:50 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "978ee120-4b97-4cd4-ab91-b2aa5e3631bf"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ7HA85JM:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ7HA85JM"
+
+[08/12/2023 03:41:53 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "978ee120-4b97-4cd4-ab91-b2aa5e3631bf"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ7HA85JM:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ7HA85JM"
+
+[08/12/2023 03:41:56 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "978ee120-4b97-4cd4-ab91-b2aa5e3631bf"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ7HA85JM:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ7HA85JM"
+
+[08/12/2023 03:42:02 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Int64'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int64()
+   at lambda_method77(Closure , QueryContext , DbDataReader , Int32[] )
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.Int64'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int64()
+   at lambda_method77(Closure , QueryContext , DbDataReader , Int32[] )
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "978ee120-4b97-4cd4-ab91-b2aa5e3631bf"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ7HA85JM:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ7HA85JM"
+
+[08/12/2023 03:44:19 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:44:19 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:44:19 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:44:19 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:44:19 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:44:42 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:44:46 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:44:46 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:44:57 a. m. -06:00] Information: "Se obtiene Lista de propiedades"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:44:57 a. m. -06:00] Information: "Número de Propiedades obtenidas 0"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:44:57 a. m. -06:00] Information: "Inicia mapeo de propiedades 08/12/2023 03:44:57 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:44:59 a. m. -06:00] Information: "Finaliza mapeo de propiedades"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:44:59 a. m. -06:00] Information: "Se inicia obtencion de token servicio isi"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:45:07 a. m. -06:00] Information: "Se obtiene de token servicio isi"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:45:07 a. m. -06:00] Information: "Inicia obtención de status de credito"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:45:20 a. m. -06:00] Information: "Propiedad no encontrada en isi 123123"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:45:20 a. m. -06:00] Information: "Propiedad no encontrada en isi 18528"
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:45:28 a. m. -06:00] Error: "Response status code does not indicate success: 422 (Unprocessable Entity)."
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:45:28 a. m. -06:00] Error: "Response status code does not indicate success: 422 (Unprocessable Entity)."
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:45:28 a. m. -06:00] Error: "Response status code does not indicate success: 422 (Unprocessable Entity)."
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:45:28 a. m. -06:00] Error: "Response status code does not indicate success: 422 (Unprocessable Entity)."
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:45:28 a. m. -06:00] Error: "Response status code does not indicate success: 422 (Unprocessable Entity)."
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:45:28 a. m. -06:00] Error: "Response status code does not indicate success: 422 (Unprocessable Entity)."
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:45:28 a. m. -06:00] Error: "Response status code does not indicate success: 422 (Unprocessable Entity)."
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:45:28 a. m. -06:00] Error: "Response status code does not indicate success: 422 (Unprocessable Entity)."
+SourceContext = "BusinessLogic.Services.AzureBlobService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:45:40 a. m. -06:00] Information: "Finaliza obtención de status de credito 08/12/2023 03:45:40 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:45:40 a. m. -06:00] Information: "****OK 08/12/2023 03:45:40 a. m."
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "69424358-461d-4723-a15b-b7fd6b6229d3"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQ908VGPG:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQ908VGPG"
+
+[08/12/2023 03:45:40 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "POST"
+RequestPath = "/api/properties/range"
+StatusCode = 200
+Elapsed = 60411.7968
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[08/12/2023 03:54:44 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:54:44 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:54:44 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:54:44 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:54:44 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:54:53 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "b6978d3c-1b90-4b33-b54d-5f366fafc5c2"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQEQIAAQ3:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQEQIAAQ3"
+
+[08/12/2023 03:54:58 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "b6978d3c-1b90-4b33-b54d-5f366fafc5c2"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQEQIAAQ3:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQEQIAAQ3"
+
+[08/12/2023 03:55:00 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "b6978d3c-1b90-4b33-b54d-5f366fafc5c2"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQEQIAAQ3:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQEQIAAQ3"
+
+[08/12/2023 03:55:01 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "b6978d3c-1b90-4b33-b54d-5f366fafc5c2"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQEQIAAQ3:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQEQIAAQ3"
+
+[08/12/2023 03:55:13 a. m. -06:00] Error: "Error al obtener las propiedades"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "b6978d3c-1b90-4b33-b54d-5f366fafc5c2"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQEQIAAQ3:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQEQIAAQ3"
+
+[08/12/2023 03:55:13 a. m. -06:00] Error: "Error al obtener las propiedades"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "b6978d3c-1b90-4b33-b54d-5f366fafc5c2"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQEQIAAQ3:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQEQIAAQ3"
+
+[08/12/2023 03:55:13 a. m. -06:00] Information: "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms"
+RequestMethod = "POST"
+RequestPath = "/api/properties/range"
+StatusCode = 200
+Elapsed = 21948.1538
+SourceContext = "Serilog.AspNetCore.RequestLoggingMiddleware"
+
+[08/12/2023 03:55:18 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "b6978d3c-1b90-4b33-b54d-5f366fafc5c2"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQEQIAAQ3:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQEQIAAQ3"
+
+[08/12/2023 03:55:20 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "b6978d3c-1b90-4b33-b54d-5f366fafc5c2"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQEQIAAQ3:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQEQIAAQ3"
+
+[08/12/2023 03:55:27 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "b6978d3c-1b90-4b33-b54d-5f366fafc5c2"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQEQIAAQ3:00000003"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQEQIAAQ3"
+
+[08/12/2023 03:57:46 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:57:46 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:57:46 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:57:46 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:57:46 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:57:58 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "6549212d-be6c-43d7-809b-5c3e40322372"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQGGM1KOU:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQGGM1KOU"
+
+[08/12/2023 03:58:02 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "6549212d-be6c-43d7-809b-5c3e40322372"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQGGM1KOU:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQGGM1KOU"
+
+[08/12/2023 03:58:04 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "6549212d-be6c-43d7-809b-5c3e40322372"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQGGM1KOU:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQGGM1KOU"
+
+[08/12/2023 03:58:07 a. m. -06:00] Error: "Failed executing DbCommand ({elapsed}ms) [Parameters=[{parameters}], CommandType='{commandType}', CommandTimeout='{commandTimeout}']{newLine}{commandText}"
+elapsed = "78"
+parameters = "p0='?', p1='?', p2='?', p3='?', p4='?', p5='?', p6='?', p7='?' (DbType = Int32), p8='?' (DbType = Int32)"
+commandType = Text
+commandTimeout = 30
+newLine = "
+"
+commandText = "
+                EXEC SP_Get_Properties_Filter
+                    @PropertyType = @p0,
+                    @State = @p1,
+                    @Municipality = @p2,
+                    @Price = @p3,
+                    @Rooms = @p4,
+                    @Bathrooms = @p5,
+                    @ProceduralStage = @p6,
+                    @PageSize = @p7,
+                    @PageNumber = @p8,
+                    @TotalRecords OUTPUT"
+EventId = { Id: 20102, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandError" }
+SourceContext = "Microsoft.EntityFrameworkCore.Database.Command"
+ActionId = "6549212d-be6c-43d7-809b-5c3e40322372"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQGGM1KOU:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQGGM1KOU"
+
+[08/12/2023 03:58:07 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@TotalRecords".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__188_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:4c8d1496-c00b-4e0a-b4d7-56f3c5728b39
+Error Number:137,State:2,Class:15
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable \"@TotalRecords\".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__188_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:4c8d1496-c00b-4e0a-b4d7-56f3c5728b39
+Error Number:137,State:2,Class:15"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "6549212d-be6c-43d7-809b-5c3e40322372"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQGGM1KOU:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQGGM1KOU"
+
+[08/12/2023 03:59:15 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:59:15 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:59:15 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:59:15 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:59:15 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 03:59:22 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "c35902f7-5f9b-4b80-bcfa-bd5e324a77a6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQHB29F38:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQHB29F38"
+
+[08/12/2023 03:59:26 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "c35902f7-5f9b-4b80-bcfa-bd5e324a77a6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQHB29F38:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQHB29F38"
+
+[08/12/2023 03:59:29 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "c35902f7-5f9b-4b80-bcfa-bd5e324a77a6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQHB29F38:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQHB29F38"
+
+[08/12/2023 03:59:31 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "c35902f7-5f9b-4b80-bcfa-bd5e324a77a6"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQHB29F38:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQHB29F38"
+
+[08/12/2023 04:00:28 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 04:00:28 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 04:00:28 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 04:00:28 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 04:00:28 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 04:00:39 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "c8cc84f1-8b58-494e-9576-071dc48aac73"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQI0VBCNS:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQI0VBCNS"
+
+[08/12/2023 04:00:43 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "c8cc84f1-8b58-494e-9576-071dc48aac73"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQI0VBCNS:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQI0VBCNS"
+
+[08/12/2023 04:00:45 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "c8cc84f1-8b58-494e-9576-071dc48aac73"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQI0VBCNS:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQI0VBCNS"
+
+[08/12/2023 04:00:48 a. m. -06:00] Error: "Failed executing DbCommand ({elapsed}ms) [Parameters=[{parameters}], CommandType='{commandType}', CommandTimeout='{commandTimeout}']{newLine}{commandText}"
+elapsed = "81"
+parameters = "p0='?', p1='?', p2='?', p3='?', p4='?', p5='?', p6='?', p7='?' (DbType = Int32), p8='?' (DbType = Int32)"
+commandType = Text
+commandTimeout = 30
+newLine = "
+"
+commandText = "
+                EXEC SP_Get_Properties_Filter
+                    @PropertyType = @p0,
+                    @State = @p1,
+                    @Municipality = @p2,
+                    @Price = @p3,
+                    @Rooms = @p4,
+                    @Bathrooms = @p5,
+                    @ProceduralStage = @p6,
+                    @PageSize = @p7,
+                    @PageNumber = @p8,
+                    @TotalRecords OUTPUT"
+EventId = { Id: 20102, Name: "Microsoft.EntityFrameworkCore.Database.Command.CommandError" }
+SourceContext = "Microsoft.EntityFrameworkCore.Database.Command"
+ActionId = "c8cc84f1-8b58-494e-9576-071dc48aac73"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQI0VBCNS:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQI0VBCNS"
+
+[08/12/2023 04:00:48 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@TotalRecords".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__188_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:9cd4ba27-2039-4880-b3ec-c1fd94d497fe
+Error Number:137,State:2,Class:15
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "Microsoft.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable \"@TotalRecords\".
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__188_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:9cd4ba27-2039-4880-b3ec-c1fd94d497fe
+Error Number:137,State:2,Class:15"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "c8cc84f1-8b58-494e-9576-071dc48aac73"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQI0VBCNS:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQI0VBCNS"
+
+[08/12/2023 04:04:42 a. m. -06:00] Information: "Now listening on: {address}"
+address = "https://localhost:7126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 04:04:42 a. m. -06:00] Information: "Now listening on: {address}"
+address = "http://localhost:5126"
+EventId = { Id: 14, Name: "ListeningOnAddress" }
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 04:04:42 a. m. -06:00] Information: "Application started. Press Ctrl+C to shut down."
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 04:04:42 a. m. -06:00] Information: "Hosting environment: {envName}"
+envName = "QA"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 04:04:42 a. m. -06:00] Information: "Content root path: {contentRoot}"
+contentRoot = "C:\Refactor\PortalPropiedadesBackend\backend_marketplace\"
+SourceContext = "Microsoft.Hosting.Lifetime"
+
+[08/12/2023 04:04:49 a. m. -06:00] Warning: "No store type was specified for the decimal property '{property}' on entity type '{entityType}'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'."
+property = "Price"
+entityType = "SP_Get_Properties_Filter"
+EventId = { Id: 30000, Name: "Microsoft.EntityFrameworkCore.Model.Validation.DecimalTypeDefaultWarning" }
+SourceContext = "Microsoft.EntityFrameworkCore.Model.Validation"
+ActionId = "9af8cd78-70ff-4305-974f-eb37093a297e"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQKCI48C0:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQKCI48C0"
+
+[08/12/2023 04:04:53 a. m. -06:00] Information: "Ingreso al api range"
+SourceContext = "backend_marketplace.Controllers.PropertiesController"
+ActionId = "9af8cd78-70ff-4305-974f-eb37093a297e"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQKCI48C0:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQKCI48C0"
+
+[08/12/2023 04:04:55 a. m. -06:00] Information: "Inicia Propierties Range"
+SourceContext = "BusinessLogic.Services.PropertiesService"
+ActionId = "9af8cd78-70ff-4305-974f-eb37093a297e"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQKCI48C0:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQKCI48C0"
+
+[08/12/2023 04:05:01 a. m. -06:00] Error: "An exception occurred while iterating over the results of a query for context type '{contextType}'.{newline}{error}"
+System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+contextType = "DataSource.AppDbContext"
+newline = "
+"
+error = "System.InvalidCastException: The SqlParameterCollection only accepts non-null SqlParameter type objects, not SqlParameter objects.
+   at Microsoft.Data.SqlClient.SqlParameterCollection.ValidateType(Object value)
+   at Microsoft.Data.SqlClient.SqlParameterCollection.Add(Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RawRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.CompositeRelationalParameter.AddDbParameter(DbCommand command, Object value)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalParameterBase.AddDbParameter(DbCommand command, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.CreateDbCommand(RelationalCommandParameterObject parameterObject, Guid commandId, DbCommandMethod commandMethod)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+EventId = { Id: 10100, Name: "Microsoft.EntityFrameworkCore.Query.QueryIterationFailed" }
+SourceContext = "Microsoft.EntityFrameworkCore.Query"
+ActionId = "9af8cd78-70ff-4305-974f-eb37093a297e"
+ActionName = "backend_marketplace.Controllers.PropertiesController.RangeProperties (backend_marketplace)"
+RequestId = "0HMVNQKCI48C0:00000001"
+RequestPath = "/api/properties/range"
+ConnectionId = "0HMVNQKCI48C0"
+
