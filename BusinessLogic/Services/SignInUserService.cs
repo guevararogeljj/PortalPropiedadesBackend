@@ -183,7 +183,7 @@ namespace BusinessLogic.Services
 
         public async Task<Response> ChangePassword(Dictionary<string, object> credentials)
         {
-            var userIntance = this._userRepository.InstanceObject();
+            var userIntance = this._userRepository!.InstanceObject();
             userIntance.CELLPHONE = (string)credentials["Cellphone"];
             var code = (string)credentials["Code"];
             var userinfo = this._userRepository.FindByCellphone(userIntance);
@@ -195,7 +195,7 @@ namespace BusinessLogic.Services
 
             var encryptOldPassword = credentials["OldPassword"].ToString();
             //var decryptOldPassword = this.DecodeString(encryptOldPassword, PrivateKeyFilePath(_configuration.GetValue<string>("Encryption:PrivateKeyFileName")));
-            var decryptOldPassword = this.DecodeString(encryptOldPassword, PrivateKeyFilePath(this._parametersRepository.GetParameter<string>("ENCRYPTION", "PRIVATEKEYFILENAME")));
+            var decryptOldPassword = this.DecodeString(encryptOldPassword!, PrivateKeyFilePath(this._parametersRepository.GetParameter<string>("ENCRYPTION", "PRIVATEKEYFILENAME")));
             var userOldPassword = HashString.GenerateHashString(decryptOldPassword);
 
             if (userinfo.PASSWORD != userOldPassword)
@@ -208,7 +208,22 @@ namespace BusinessLogic.Services
 
             if (resultService.ContainsKey("status") && resultService["status"].ToString()!.ToLower() == "true")
             {
-                return new Response(true, "Se ha valido correctamente el nuevo número telefónico");
+                var encryptNewPassword = credentials["NewPassword"].ToString();
+                //var decryptNewPassword = this.DecodeString(encryptNewPassword, PrivateKeyFilePath(_configuration.GetValue<string>("Encryption:PrivateKeyFileName")));
+                var decryptNewPassword = this.DecodeString(encryptNewPassword!, PrivateKeyFilePath(this._parametersRepository.GetParameter<string>("ENCRYPTION", "PRIVATEKEYFILENAME")));
+                var userNewHashPassword = HashString.GenerateHashString(decryptNewPassword);
+
+                userinfo.PASSWORD = userNewHashPassword;
+
+                this._userRepository.Update(userinfo);
+                var result = this._userRepository.Save();
+
+                if (result.Success)
+                {
+                    return new Response(true, "Cambio de contraseña exitoso.");
+                }
+
+                return new Response(false, "No se logro realizar el cambio de contraseña, intentalo nuevamente.");
             }
             else
             {
@@ -216,23 +231,6 @@ namespace BusinessLogic.Services
                 return new Response(false, "La validación no ha sido exitosa");
             }
 
-
-            var encryptNewPassword = credentials["NewPassword"].ToString();
-            //var decryptNewPassword = this.DecodeString(encryptNewPassword, PrivateKeyFilePath(_configuration.GetValue<string>("Encryption:PrivateKeyFileName")));
-            var decryptNewPassword = this.DecodeString(encryptNewPassword, PrivateKeyFilePath(this._parametersRepository.GetParameter<string>("ENCRYPTION", "PRIVATEKEYFILENAME")));
-            var userNewHashPassword = HashString.GenerateHashString(decryptNewPassword);
-
-            userinfo.PASSWORD = userNewHashPassword;
-
-            this._userRepository.Update(userinfo);
-            var result = this._userRepository.Save();
-
-            if (result.Success)
-            {
-                return new Response(true, "Cambio de contraseña exitoso.");
-            }
-
-            return new Response(false, "No se logro realizar el cambio de contraseña, intentalo nuevamente.");
         }
 
         public async Task<Response> ChangeEmail(Dictionary<string, object> credentials)
