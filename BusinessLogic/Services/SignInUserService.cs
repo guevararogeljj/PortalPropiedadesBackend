@@ -1,5 +1,6 @@
 ﻿using BusinessLogic.Contracts;
 using BusinessLogic.Models;
+using Castle.Core.Resource;
 using DataSource.Contracts;
 using DataSource.Entities;
 using Microsoft.AspNetCore.Identity;
@@ -63,25 +64,51 @@ namespace BusinessLogic.Services
                 //var userStored = this._userRepository.FindByCellphone(user);
                 var userStored = await this._userRepository.FindByCellphoneOrEmail(user);
 
+                int? intentos = userStored.ATTEMPTS == null ||  userStored.ATTEMPTS == 0  ? 1 + 1 : userStored.ATTEMPTS > 5 ? 5 : userStored.ATTEMPTS + 1;
+
+                DateTime? DateLogger = userStored.UPDATED_AT;
+                DateLogger = DateLogger?.AddMinutes(3);
+                DateTime timeNow = DateTime.Now;
+
                 if (userStored == null)
                 {
                     return new Response(false, "Usuario/contraseña invalida");
                 }
 
-                if (!((userStored.CELLPHONE!.Equals(cellphone) || userStored.EMAIL!.Equals(cellphone) ) && (userStored.PASSWORD!.Equals(userPassword))))
+                if (userStored.ATTEMPTS >= 5 && DateLogger >= timeNow)
                 {
+                    return new Response(false, "Ha exedido el numero de intentos intente mas tarde");
+                }
+                else if(userStored.ATTEMPTS >= 5 && timeNow >= DateLogger)
+                {
+                    intentos = 1;
+                }
+
+                if (!((userStored.CELLPHONE!.Equals(cellphone) || userStored.EMAIL!.Equals(cellphone)) && (userStored.PASSWORD!.Equals(userPassword)))) 
+                {
+                    userStored.ATTEMPTS = intentos;
+                    userStored.UPDATED_AT = timeNow;
+                    this._userRepository.Update(userStored);
+                    _userRepository.Save();
                     return new Response(false, "Usuario/contraseña invalida");
                 }
+                
 
                 if (userStored.CELLPHONE_VALIDATED_AT == null)
                 {
+                    userStored.ATTEMPTS = intentos;
+                    userStored.UPDATED_AT = timeNow;
+                    this._userRepository.Update(userStored);
+                    _userRepository.Save();
                     return new Response(false, "Este usuario no fue validado, por favor intenta recuperar tu contraseña");
                 }
                 user.CELLPHONE = userStored.CELLPHONE;
-                userStored.LOGIN = 1;
+                userStored.LOGIN = 0;                
                 var userinfo = _userRepository.UserInformation(user);
                 var token = await this._jwtService.Authenticate(userinfo);
                 userStored.TOKEN = (string)token["token"];
+                userStored.ATTEMPTS = 1;
+                userStored.UPDATED_AT = timeNow;
                 _userRepository.Update(userStored);
                 _userRepository.Save();
 

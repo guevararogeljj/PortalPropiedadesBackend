@@ -802,6 +802,16 @@ namespace DataSource
                 entity.Property(e => e.UPDATED_AT)
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.ATTEMPTS)
+                    .HasColumnName("ATTEMPTS")
+                    .HasDefaultValueSql("((0))");
+                entity.Property(e => e.EMAILSECONDARY)
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+                entity.Property(e => e.CELLPHONESECONDARY)
+                    .HasMaxLength(10)
+                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<TUSERSETTINGS>(entity =>

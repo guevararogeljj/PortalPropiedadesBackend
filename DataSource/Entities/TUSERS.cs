@@ -32,6 +32,9 @@ namespace DataSource.Entities
         public DateTime? IDENTITY_VALIDATED_AT { get; set; }
         public DateTime? CONTRACT_SIGN_AT { get; set; }
         public DateTime? PROCESSCONTRACT { get; set; }
+        public int? ATTEMPTS { get; set; }
+        public string? EMAILSECONDARY { get; set; }
+        public string? CELLPHONESECONDARY { get; set; }
 
         public virtual TUSERSINFO? TUSERSINFO { get; set; }
         public virtual ICollection<TDOCUMENTS> TDOCUMENTS { get; set; }
@@ -42,8 +45,6 @@ namespace DataSource.Entities
         public virtual ICollection<TRUSERSTATUSREGISTER> TRUSERSTATUSREGISTER { get; set; }
         public virtual ICollection<TUSERSETTINGS> TUSERSETTINGS { get; set; }
         public virtual ICollection<WEBDOXREQUEST> WEBDOXREQUEST { get; set; }
-
-        public string? EMAILSECONDARY { get; set; }
-        public string? CELLPHONESECONDARY { get; set; }
+        
     }
 }

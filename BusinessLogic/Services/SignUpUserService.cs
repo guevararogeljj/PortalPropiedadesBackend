@@ -661,7 +661,7 @@ namespace BusinessLogic.Services
 
             if (userStored == null)
             {
-                return new Response(false, "Informacion no valida.");
+                return new Response(false, "Usuario/contraseña invalida.");
             }
 
 
