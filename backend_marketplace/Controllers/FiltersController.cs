@@ -55,7 +55,7 @@ namespace backend_marketplace.Controllers
         [HttpGet("bedrooms")]
         public async Task<IActionResult> Bedrooms()
         {
-            var result = this._filterService.FindAll(10);
+            var result = this._filterService.GetAll();
 
             return JsonResponse(result);
         }
@@ -71,7 +71,7 @@ namespace backend_marketplace.Controllers
         [HttpGet("fullbathrooms")]
         public async Task<IActionResult> FullBathrooms()
         {
-            var result = this._filterService.FindAll(10);
+            var result = this._filterService.GetAll();
 
             return JsonResponse(result);
         }

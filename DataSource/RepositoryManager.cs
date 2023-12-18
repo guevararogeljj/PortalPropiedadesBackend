@@ -9,6 +9,7 @@ namespace DataSource
     {
         public static void AddRegistration(this IServiceCollection services)
         {
+            services.AddScoped<ITcSpaceRepository, TcSpaceRepository>();
             services.AddScoped<IPropertiesRespository, PropertiesRespository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IContactRepository, ContactRepository>();

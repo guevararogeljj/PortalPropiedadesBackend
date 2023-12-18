@@ -12,7 +12,7 @@ namespace backend_marketplace.Controllers
         {
             this._logger = logger;
         }
-        protected IActionResult JsonResponse(Task<IEnumerable> result)
+        protected IActionResult JsonResponse<T>(Task<T> result)
         {
             if (result.IsFaulted)
             {

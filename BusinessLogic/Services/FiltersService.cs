@@ -1,14 +1,18 @@
 ﻿using BusinessLogic.Contracts;
+using BusinessLogic.Interfaces;
+using Contracts.Response;
 using DataSource;
+using DataSource.Contracts;
 using System.Collections;
 
 namespace BusinessLogic.Services
 {
     internal class FiltersService : BaseService, IFiltersService
     {
-        public FiltersService(AppDbContext appDbContext) : base(appDbContext)
+        private ITcSpaceRepository _tcSpaceRepository;
+        public FiltersService(AppDbContext appDbContext, ITcSpaceRepository tcSpaceRepository) : base(appDbContext)
         {
-
+            _tcSpaceRepository = tcSpaceRepository;
         }
 
         public async Task<object> Find(int id)
@@ -34,7 +38,14 @@ namespace BusinessLogic.Services
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable> GetAll()
+        public async Task<List<TcSpaceResponse>> GetAll()
+        {
+            var result = await _tcSpaceRepository.Get();
+
+            return result.Select(x => new TcSpaceResponse { description = x.DESCRIPTION, id = x.ID }).ToList();
+        }
+
+        Task<IEnumerable> ICatalog.GetAll()
         {
             throw new NotImplementedException();
         }
