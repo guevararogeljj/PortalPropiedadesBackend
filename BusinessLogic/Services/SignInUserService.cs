@@ -67,7 +67,7 @@ namespace BusinessLogic.Services
                 int? intentos = userStored.ATTEMPTS == null ||  userStored.ATTEMPTS == 0  ? 1 + 1 : userStored.ATTEMPTS > 5 ? 5 : userStored.ATTEMPTS + 1;
 
                 DateTime? DateLogger = userStored.UPDATED_AT;
-                DateLogger = DateLogger?.AddMinutes(3);
+                DateLogger = DateLogger?.AddMinutes(15);
                 DateTime timeNow = DateTime.Now;
 
                 if (userStored == null)
