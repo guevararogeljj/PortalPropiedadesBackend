@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.Infrastructure;
+using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
 namespace backend_marketplace.Models
@@ -14,7 +15,7 @@ namespace backend_marketplace.Models
         [JsonPropertyName("email")]
         [Required]
         [EmailAddress]
-        [RegularExpression(@"^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$")]
+        [RegularExpression(@"^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$")]       
         public string? Email { get; set; }
 
         [JsonPropertyName("name")]
@@ -38,7 +39,7 @@ namespace backend_marketplace.Models
         [JsonPropertyName("password")]
         [Required]
         //[StringLength(12, MinimumLength = 8)]
-        //[RegularExpression(@"^(?=.*[a-zñ])(?=.*[A-ZÑ])(?=.*\d)[a-zA-ZñÑ\d]{8,12}$")]
+        //[RegularExpression(@"^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,12}$")]
         public string? Password { get => password; set => password = value; }
 
         [JsonPropertyName("cellphone")]

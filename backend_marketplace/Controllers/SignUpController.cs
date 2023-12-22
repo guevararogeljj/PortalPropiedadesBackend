@@ -31,13 +31,24 @@ namespace backend_marketplace.Controllers
             {
                 IEnumerable<string> errors = Errors();
                 this._logger.LogError($"Intento de dar de alta un nuevo usuario ha sido fallido, ip: {Request.HttpContext.Connection.LocalIpAddress}");
+                return StatusCode(413);
+            }
+
+            try
+            {
+                await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
+            }
+            catch
+            {
+                IEnumerable<string> errors = Errors();
                 return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
             }
 
-            await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
-
             var result = this._signUpUserService.AddNewUser(user.ToDictionary());
             this._logger.LogInformation($"{result.ToString()}");
+
+            if (result.Message == null || result.Message == "El password no valido.")
+                return StatusCode(413);
 
             return new JsonResult(result);
         }
@@ -51,7 +62,14 @@ namespace backend_marketplace.Controllers
                 return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
             }
 
-            await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
+            try {
+                await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
+            }
+            catch 
+            {
+                IEnumerable<string> errors = Errors();
+                return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
+            }           
 
             var result = _signUpUserService.SendCodeSms(user.ToDictionary());
 
@@ -67,7 +85,15 @@ namespace backend_marketplace.Controllers
                 return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
             }
 
-            await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
+            try
+            {
+                await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
+            }
+            catch
+            {
+                IEnumerable<string> errors = Errors();
+                return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
+            }
 
             var result = _signUpUserService.ValidateSmsCode(sms.ToDictionary());
 
@@ -85,7 +111,15 @@ namespace backend_marketplace.Controllers
                 return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
             }
 
-            await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
+            try
+            {
+                await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
+            }
+            catch
+            {
+                IEnumerable<string> errors = Errors();
+                return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
+            }
 
             List<Dictionary<string, object>> filesDic = new List<Dictionary<string, object>>();
 
@@ -109,7 +143,15 @@ namespace backend_marketplace.Controllers
                 return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
             }
 
-            await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
+            try
+            {
+                await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
+            }
+            catch
+            {
+                IEnumerable<string> errors = Errors();
+                return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
+            }
 
             //var result = _signUpUserService.UserInformation(data.ToDictionary());
             var result = await _signUpUserService.UserInformation(data.ToDictionary());
@@ -127,7 +169,15 @@ namespace backend_marketplace.Controllers
                 return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
             }
 
-            await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
+            try
+            {
+                await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
+            }
+            catch
+            {
+                IEnumerable<string> errors = Errors();
+                return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
+            }
 
             var result = _signUpUserService.UpdateUserInformation(data.ToDictionary());
 
@@ -187,7 +237,15 @@ namespace backend_marketplace.Controllers
                 return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
             }
 
-            await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
+            try
+            {
+                await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
+            }
+            catch
+            {
+                IEnumerable<string> errors = Errors();
+                return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
+            }
 
             var result = _signUpUserService.PasswordRecovery(data.ToDictionary());
 
@@ -203,7 +261,15 @@ namespace backend_marketplace.Controllers
                 return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
             }
 
-            await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
+            try
+            {
+                await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
+            }
+            catch
+            {
+                IEnumerable<string> errors = Errors();
+                return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
+            }
 
             var result = _signUpUserService.PasswordRecoveryValidate(data.ToDictionary());
 

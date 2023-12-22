@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Linq;
 using System.Text.Json;
+using System.Text.RegularExpressions;
 using Utilities;
 using WebDox;
 
@@ -49,7 +50,7 @@ namespace BusinessLogic.Services
             this._logger = logger;
         }
 
-        public Object AddNewUser(Dictionary<string, object> data)
+        public Response AddNewUser(Dictionary<string, object> data)
         {
 
             try
@@ -63,6 +64,12 @@ namespace BusinessLogic.Services
                 var userObject = _userRepository.InstanceObject();
                 //var decryptpassword = this.DecodeString(passwordEncrypt, PrivateKeyFilePath(_configuration.GetValue<string>("Encryption:PrivateKeyFileName")));
                 var decryptpassword = this.DecodeString(passwordEncrypt, PrivateKeyFilePath(this._parametersRepository.GetParameter<string>("ENCRYPTION", "PRIVATEKEYFILENAME")));
+                Regex validateGuidRegex = new Regex("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[.#?!@$%^&*-]).{8,12}$");
+
+
+
+                if (!validateGuidRegex.IsMatch(decryptpassword)) throw new Exception("El password no valido.");
+
                 userObject.PASSWORD = HashString.GenerateHashString(decryptpassword);
                 userObject.CELLPHONE = cellphone;
                 userObject.CREATED_AT = DateTime.Now;
@@ -116,6 +123,10 @@ namespace BusinessLogic.Services
             catch (Exception ex)
             {
                 this._logger.LogError(ex.Message, ex);
+
+                if(ex.Message == "El password no valido.")
+                    return new Response(false, "El password no valido.");
+
                 return new Response(false, StringResources.signinuserservice_addnewuser_exception);
             }
 
