@@ -314,8 +314,7 @@ namespace backend_marketplace.Controllers
             if (!ModelState.IsValid)
             {
                 this._logger.LogError($"Intento de actualizar datos fallido: {data.ToString()},  IP: {Request.HttpContext.Connection.RemoteIpAddress}");
-
-                return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                return StatusCode(413, new JsonResult(new { result = "", success = false, message = "informacion no valida" })); 
             }
 
             var result = await this._signInUserService.UpdateDataUser(data.ToDictionary());

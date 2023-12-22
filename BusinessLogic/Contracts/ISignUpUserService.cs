@@ -9,7 +9,7 @@ namespace BusinessLogic.Contracts
         /// </summary>
         /// <param name="attributes">Data dictionary with keys [Name],[Lastname], [Password], [Email], [Cellphone]</param>
         /// <returns>A boolean that represents it was successfully or not</returns>
-        Object AddNewUser(Dictionary<string, object> user);
+        Response AddNewUser(Dictionary<string, object> user);
 
         /// <summary>
         /// Send sms notification to user by cell phone previously  registered
