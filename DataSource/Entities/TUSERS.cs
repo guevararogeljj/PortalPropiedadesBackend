@@ -35,7 +35,7 @@ namespace DataSource.Entities
         public int? ATTEMPTS { get; set; }
         public string? EMAILSECONDARY { get; set; }
         public string? CELLPHONESECONDARY { get; set; }
-
+        public int? ATTEMPTSCODE { get; set; }
         public virtual TUSERSINFO? TUSERSINFO { get; set; }
         public virtual ICollection<TDOCUMENTS> TDOCUMENTS { get; set; }
         public virtual ICollection<TEMAILVALIDATION> TEMAILVALIDATION { get; set; }
