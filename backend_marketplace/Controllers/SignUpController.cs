@@ -236,7 +236,7 @@ namespace backend_marketplace.Controllers
             }
             catch (Exception ex)
             {
-                Unauthorized();
+               return Unauthorized();
             }
             
         }
