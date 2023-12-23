@@ -2,6 +2,7 @@
 using BusinessLogic.Contracts;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace backend_marketplace.Controllers
 {
@@ -56,127 +57,233 @@ namespace backend_marketplace.Controllers
         [Authorize]
         public async Task<IActionResult> Profile(UserProfile user)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
-                return new JsonResult(new { result = "", success = false, message = "usuario no valido" });
+                if (!ModelState.IsValid)
+                {
+                    this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
+                    return new JsonResult(new { result = "", success = false, message = "usuario no valido" });
+                }
+
+                var cellClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+                if (user.Cellphone != cellClaimValue)
+                    throw new Exception("No autorizado");
+
+                var result = (await this._signInUserService.Profile(user.ToDictionary()));
+
+                return new JsonResult(result);
+
+
             }
-
-            var result = (await this._signInUserService.Profile(user.ToDictionary()));
-
-            return new JsonResult(result);
+            catch (Exception ex) 
+            {
+                return Unauthorized();            
+            }            
         }
 
         [HttpPost("favorites")]
         [Authorize]
         public async Task<IActionResult> Favorites(UserProfile user)
         {
-            if (!ModelState.IsValid)
-            {
-                this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
+            try {
 
-                return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                if (!ModelState.IsValid)
+                {
+                    this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
+
+                    return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                }
+                var cellClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+                if (user.Cellphone != cellClaimValue)
+                    throw new Exception("No autorizado");
+
+                var result = this._propertiesService.Favorites(user.ToDictionary());
+
+                return new JsonResult(result.Result);
             }
+            catch (Exception ex)
+            {
+                return Unauthorized(ex);
 
-            var result = this._propertiesService.Favorites(user.ToDictionary());
-
-            return new JsonResult(result.Result);
+            }            
         }
 
         [HttpPost("addfavorite")]
         [Authorize]
         public async Task<IActionResult> AddFavorite(Favorite user)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
+                if (!ModelState.IsValid)
+                {
+                    this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
 
-                return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                    return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                }
+
+                var cellClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+                if (user.Cellphone != cellClaimValue)
+                    throw new Exception("No autorizado");
+
+
+                var result = this._propertiesService.AddFavorite(user.ToDictionary());
+
+                return new JsonResult(result.Result);
+
             }
-
-            var result = this._propertiesService.AddFavorite(user.ToDictionary());
-
-            return new JsonResult(result.Result);
+            catch (Exception ex) 
+            { 
+                return Unauthorized();            
+            }            
         }
 
         [HttpPost("removefavorite")]
         [Authorize]
         public async Task<IActionResult> RemoveFavorite(Favorite user)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
+                if (!ModelState.IsValid)
+                {
+                    this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
 
-                return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                    return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                }
+
+                var cellClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+                if (user.Cellphone != cellClaimValue)
+                    throw new Exception("No autorizado");
+
+                var result = this._propertiesService.RemoveFavorite(user.ToDictionary());
+
+                return new JsonResult(result.Result);
             }
-
-            var result = this._propertiesService.RemoveFavorite(user.ToDictionary());
-
-            return new JsonResult(result.Result);
+            catch (Exception ex) {
+            
+                return Unauthorized();
+            }
+            
         }
 
         [HttpPost("changepassword")]
         [Authorize]
         public async Task<IActionResult> ChangePassword(ChangePassword credencial)
         {
-            if (!ModelState.IsValid)
-            {
-                this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
+            try {
 
-                return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                if (!ModelState.IsValid)
+                {
+                    this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
+
+                    return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                }
+
+                var cellClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+                if (credencial.Cellphone != cellClaimValue)
+                    throw new Exception("No autorizado");
+
+                var result = this._signInUserService.ChangePassword(credencial.ToDictionary());
+
+                return new JsonResult(result.Result);
             }
-
-            var result = this._signInUserService.ChangePassword(credencial.ToDictionary());
-
-            return new JsonResult(result.Result);
+            catch (Exception ex)
+            {
+                return Unauthorized();
+            }            
         }
 
         [HttpPost("removeallfavorites")]
         [Authorize]
         public async Task<IActionResult> RemoveAllFavorites(Logout user)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
+                if (!ModelState.IsValid)
+                {
+                    this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
 
-                return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                    return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                }
+                var cellClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+                if (user.Cellphone != cellClaimValue)
+                    throw new Exception("No autorizado");
+
+                var result = this._propertiesService.RemoveAllFavorite(user.ToDictionary());
+
+                return new JsonResult(result.Result);
+
             }
-
-            var result = this._propertiesService.RemoveAllFavorite(user.ToDictionary());
-
-            return new JsonResult(result.Result);
+            catch (Exception ex) 
+            { 
+                return Unauthorized();
+            }
+            
         }
 
         [HttpPost("changeemail")]
         [Authorize]
         public async Task<IActionResult> ChangeEmail(ChangeEmail credencial)
         {
-            if (!ModelState.IsValid)
-            {
-                this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
 
-                return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+            try {
+                if (!ModelState.IsValid)
+                {
+                    this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
+
+                    return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                }
+
+                var emailClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
+
+                if (emailClaimValue != null && credencial.Email != emailClaimValue)
+                    throw new Exception("No autorizado");
+
+                var result = this._signInUserService.ChangeEmail(credencial.ToDictionary());
+
+                return new JsonResult(result.Result);
+
             }
-
-            var result = this._signInUserService.ChangeEmail(credencial.ToDictionary());
-
-            return new JsonResult(result.Result);
+            catch {
+            
+                return Unauthorized();            
+            }
+            
         }
 
         [HttpPost("updoubleauth")]
         [Authorize]
         public async Task<IActionResult> UpDoubleAuth(Logout credencial)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
 
-                return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                if (!ModelState.IsValid)
+                {
+                    this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
+
+                    return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                }
+
+                var cellClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+                if (credencial.Cellphone != cellClaimValue)
+                    throw new Exception("No autorizado");
+
+                var result = this._signInUserService.UpDoubleAuth(credencial.ToDictionary());
+
+                return new JsonResult(result.Result);
             }
-
-            var result = this._signInUserService.UpDoubleAuth(credencial.ToDictionary());
-
-            return new JsonResult(result.Result);
+            catch (Exception ex) {
+            
+               return Unauthorized();
+            }
+            
         }
 
         //[Authorize]
@@ -199,127 +306,242 @@ namespace backend_marketplace.Controllers
         [HttpPost("updoubleauthstatus")]
         public async Task<IActionResult> UpDoubleAuthStatus(TwoFactorAuthentication data)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
 
-                return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                if (!ModelState.IsValid)
+                {
+                    this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
+
+                    return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                }
+
+                var cellClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+                if (data.Cellphone != cellClaimValue)
+                    throw new Exception("No autorizado");
+
+
+                var result = this._signInUserService.UpDoubleAuthStatus(data.ToDictionary());
+
+                return new JsonResult(result.Result);
+
             }
-
-            var result = this._signInUserService.UpDoubleAuthStatus(data.ToDictionary());
-
-            return new JsonResult(result.Result);
+            catch (Exception ex) 
+            {
+                return Unauthorized();
+            
+            }            
         }
 
         [Authorize]
         [HttpPost("downdoubleauthstatus")]
         public async Task<IActionResult> DownDoubleAuthStatus(TwoFactorAuthentication data)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
+                if (!ModelState.IsValid)
+                {
+                    this._logger.LogInformation($"Intento de acceso al portal ha fallado ip de acceso: {Request.HttpContext.Connection.RemoteIpAddress}");
 
-                return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                    return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                }
+
+                var cellClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+                if (data.Cellphone != cellClaimValue)
+                    throw new Exception("No autorizado");
+
+                var result = this._signInUserService.DownDoubleAuthStatus(data.ToDictionary());
+
+                return new JsonResult(result.Result);
+
             }
-
-            var result = this._signInUserService.DownDoubleAuthStatus(data.ToDictionary());
-
-            return new JsonResult(result.Result);
+            catch (Exception ex) 
+            { 
+            
+                return Unauthorized();            
+            }
+            
         }
 
         [Authorize]
         [HttpPost("changecellphone")]
         public async Task<IActionResult> ChangeCellphone(ChangeCellphone data)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                this._logger.LogError($"Intento de cambio de celular fallido: {data.ToString()},  IP: {Request.HttpContext.Connection.RemoteIpAddress}");
+                if (!ModelState.IsValid)
+                {
+                    this._logger.LogError($"Intento de cambio de celular fallido: {data.ToString()},  IP: {Request.HttpContext.Connection.RemoteIpAddress}");
 
-                return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                    return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                }
+
+                var cellClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+                if (data.Cellphone != cellClaimValue)
+                    throw new Exception("No autorizado");
+
+                var result = this._signInUserService.ChangeCellphone(data.ToDictionary());
+
+                return new JsonResult(result.Result);
+
             }
-
-            var result = this._signInUserService.ChangeCellphone(data.ToDictionary());
-
-            return new JsonResult(result.Result);
+            catch (Exception ex) 
+            {
+                return Unauthorized();           
+            
+            }           
         }
 
         [Authorize]
         [HttpPost("changecellphonesmscode")]
         public async Task<IActionResult> ChangeCellphoneSmsCode(ChangeCellphone data)
         {
-            if (!ModelState.IsValid)
-            {
-                this._logger.LogError($"Intento de cambio de celular fallido: {data.ToString()},  IP: {Request.HttpContext.Connection.RemoteIpAddress}");
+            try {
 
-                return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                if (!ModelState.IsValid)
+                {
+                    this._logger.LogError($"Intento de cambio de celular fallido: {data.ToString()},  IP: {Request.HttpContext.Connection.RemoteIpAddress}");
+
+                    return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                }
+
+                var cellClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+                if (data.Cellphone != cellClaimValue)
+                    throw new Exception("No autorizado");
+
+                var result = this._signInUserService.SendChangeCellphoneCodeSms(data.ToDictionary());
+
+                return new JsonResult(result.Result);
+
             }
-
-            var result = this._signInUserService.SendChangeCellphoneCodeSms(data.ToDictionary());
-
-            return new JsonResult(result.Result);
+            catch(Exception ex)
+            {
+                return Unauthorized();
+            }            
         }
 
         [Authorize]
         [HttpPost("validatechangecellphonesmscode")]
         public async Task<IActionResult> ValidateChangeCellphoneSmsCode(ChangeCellphoneCode data)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                this._logger.LogError($"Intento de cambio de celular fallido: {data.ToString()},  IP: {Request.HttpContext.Connection.RemoteIpAddress}");
+                if (!ModelState.IsValid)
+                {
+                    this._logger.LogError($"Intento de cambio de celular fallido: {data.ToString()},  IP: {Request.HttpContext.Connection.RemoteIpAddress}");
 
-                return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                    return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                }
+
+                var cellClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+                if (data.Cellphone != cellClaimValue)
+                    throw new Exception("No autorizado");
+
+                var result = this._signInUserService.ValidateChangeCellphoneSmsCode(data.ToDictionary());
+
+                return new JsonResult(result.Result);
             }
-
-            var result = this._signInUserService.ValidateChangeCellphoneSmsCode(data.ToDictionary());
-
-            return new JsonResult(result.Result);
+            catch (Exception ex) 
+            { 
+            
+                return Unauthorized() ;
+            }
+            
         }
 
         [Authorize]
         [HttpPost("addcontractdata")]
         public async Task<IActionResult> AddContractData(ContractInfo data)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                this._logger.LogError($"Intento de cambio de celular fallido: {data.ToString()},  IP: {Request.HttpContext.Connection.RemoteIpAddress}");
 
-                return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                if (!ModelState.IsValid)
+                {
+                    this._logger.LogError($"Intento de cambio de celular fallido: {data.ToString()},  IP: {Request.HttpContext.Connection.RemoteIpAddress}");
+
+                    return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                }
+
+                var cellClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+                if (data.Cellphone != cellClaimValue)
+                    throw new Exception("No autorizado");
+
+                var result = await this._signInUserService.ContractInfo(data.ToDictionary());
+
+                return new JsonResult(result);
             }
-
-            var result = await this._signInUserService.ContractInfo(data.ToDictionary());
-
-            return new JsonResult(result);
+            catch (Exception ex) 
+            { 
+                return Unauthorized();
+            }
+            
         }
 
         [Authorize]
         [HttpPost("ndastatus")]
         public async Task<IActionResult> NDASignedStatus(Logout data)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                this._logger.LogError($"Intento de cambio de celular fallido: {data.ToString()},  IP: {Request.HttpContext.Connection.RemoteIpAddress}");
+                if (!ModelState.IsValid)
+                {
+                    this._logger.LogError($"Intento de cambio de celular fallido: {data.ToString()},  IP: {Request.HttpContext.Connection.RemoteIpAddress}");
 
-                return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                    return new JsonResult(new { result = "", success = false, message = "informacion no valida" });
+                }
+                var cellClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+                if (data.Cellphone != cellClaimValue)
+                    throw new Exception("No autorizado");
+
+                var result = await this._signInUserService.NDASignedStatus(data.ToDictionary());
+
+                return new JsonResult(result);
+
+
             }
-
-            var result = await this._signInUserService.NDASignedStatus(data.ToDictionary());
-
-            return new JsonResult(result);
+            catch (Exception ex) 
+            { 
+                return Unauthorized() ;
+            
+            }
+            
         }
 
         [Authorize]
         [HttpPut("UpdateDataUser")]
         public async Task<IActionResult> UpdateDataUser(UserData data)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                this._logger.LogError($"Intento de actualizar datos fallido: {data.ToString()},  IP: {Request.HttpContext.Connection.RemoteIpAddress}");
-                return StatusCode(413, new JsonResult(new { result = "", success = false, message = "informacion no valida" })); 
+
+                if (!ModelState.IsValid)
+                {
+                    this._logger.LogError($"Intento de actualizar datos fallido: {data.ToString()},  IP: {Request.HttpContext.Connection.RemoteIpAddress}");
+                    return StatusCode(413, new JsonResult(new { result = "", success = false, message = "informacion no valida" }));
+                }
+                var cellClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+                if (data.Cellphone != cellClaimValue)
+                    throw new Exception("No autorizado");
+
+                var result = await this._signInUserService.UpdateDataUser(data.ToDictionary());
+
+                return new JsonResult(result);
             }
-
-            var result = await this._signInUserService.UpdateDataUser(data.ToDictionary());
-
-            return new JsonResult(result);
+            catch (Exception ex) 
+            { 
+            
+                return Unauthorized();
+            }
+            
         }
 
         //[HttpPost("generatecontract")]

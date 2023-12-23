@@ -6,9 +6,11 @@ using DataSource.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using System.Data.Entity.Infrastructure;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using Utilities;
 
 [assembly: InternalsVisibleTo("UnitTests")]
@@ -172,7 +174,7 @@ namespace BusinessLogic.Services
             return Encoding.UTF8.GetString(bytes);
         }
 
-        public async Task<Response> Profile(Dictionary<string, object> credentials)
+        public async Task<Response> Profile(Dictionary<string, object> credentials, string token)
         {
             try
             {
@@ -184,6 +186,8 @@ namespace BusinessLogic.Services
                 {
                     return new Response(false, "No se encontro información del perfil");
                 }
+
+                if (token != userinfo.TOKEN) throw new Exception("Usuario no autorizado");
 
                 var result = new
                 {
@@ -203,6 +207,8 @@ namespace BusinessLogic.Services
             }
             catch (Exception ex)
             {
+                if (ex.Message == "Usuario no autorizado") throw new Exception(ex.Message);
+
                 this._logger.LogError(ex.Message, ex);
                 return new Response(false, "Ha ocurrido un error");
             }
@@ -210,53 +216,70 @@ namespace BusinessLogic.Services
 
         public async Task<Response> ChangePassword(Dictionary<string, object> credentials)
         {
-            var userIntance = this._userRepository!.InstanceObject();
-            userIntance.CELLPHONE = (string)credentials["Cellphone"];
-            var code = (string)credentials["Code"];
-            var userinfo = this._userRepository.FindByCellphone(userIntance);
-
-            if (userinfo == null || userinfo.TUSERSINFO == null)
+            try
             {
-                return new Response(false, "No se encontro información del perfil");
-            }
+                var userIntance = this._userRepository!.InstanceObject();
+                userIntance.CELLPHONE = (string)credentials["Cellphone"];
+                var code = (string)credentials["Code"];
+                var userinfo = this._userRepository.FindByCellphone(userIntance);
 
-            var encryptOldPassword = credentials["OldPassword"].ToString();
-            //var decryptOldPassword = this.DecodeString(encryptOldPassword, PrivateKeyFilePath(_configuration.GetValue<string>("Encryption:PrivateKeyFileName")));
-            var decryptOldPassword = this.DecodeString(encryptOldPassword!, PrivateKeyFilePath(this._parametersRepository.GetParameter<string>("ENCRYPTION", "PRIVATEKEYFILENAME")));
-            var userOldPassword = HashString.GenerateHashString(decryptOldPassword);
-
-            if (userinfo.PASSWORD != userOldPassword)
-            {
-                return new Response(false, "El password actual no coincide");
-            }
-
-
-            var resultService = await this._smsService.ValidateSmsOtp(userIntance.CELLPHONE, code);
-
-            if (resultService.ContainsKey("status") && resultService["status"].ToString()!.ToLower() == "true")
-            {
-                var encryptNewPassword = credentials["NewPassword"].ToString();
-                //var decryptNewPassword = this.DecodeString(encryptNewPassword, PrivateKeyFilePath(_configuration.GetValue<string>("Encryption:PrivateKeyFileName")));
-                var decryptNewPassword = this.DecodeString(encryptNewPassword!, PrivateKeyFilePath(this._parametersRepository.GetParameter<string>("ENCRYPTION", "PRIVATEKEYFILENAME")));
-                var userNewHashPassword = HashString.GenerateHashString(decryptNewPassword);
-
-                userinfo.PASSWORD = userNewHashPassword;
-
-                this._userRepository.Update(userinfo);
-                var result = this._userRepository.Save();
-
-                if (result.Success)
+                if (userinfo == null || userinfo.TUSERSINFO == null)
                 {
-                    return new Response(true, "Cambio de contraseña exitoso.");
+                    return new Response(false, "No se encontro información del perfil");
                 }
 
-                return new Response(false, "No se logro realizar el cambio de contraseña, intentalo nuevamente.");
-            }
-            else
-            {
+                var encryptOldPassword = credentials["OldPassword"].ToString();
+                //var decryptOldPassword = this.DecodeString(encryptOldPassword, PrivateKeyFilePath(_configuration.GetValue<string>("Encryption:PrivateKeyFileName")));
+                var decryptOldPassword = this.DecodeString(encryptOldPassword!, PrivateKeyFilePath(this._parametersRepository.GetParameter<string>("ENCRYPTION", "PRIVATEKEYFILENAME")));
+                var userOldPassword = HashString.GenerateHashString(decryptOldPassword);
 
-                return new Response(false, "La validación no ha sido exitosa");
+                if (userinfo.PASSWORD != userOldPassword)
+                {
+                    return new Response(false, "El password actual no coincide");
+                }
+
+
+                var resultService = await this._smsService.ValidateSmsOtp(userIntance.CELLPHONE, code);
+
+                if (resultService.ContainsKey("status") && resultService["status"].ToString()!.ToLower() == "true")
+                {
+                    var encryptNewPassword = credentials["NewPassword"].ToString();
+                    //var decryptNewPassword = this.DecodeString(encryptNewPassword, PrivateKeyFilePath(_configuration.GetValue<string>("Encryption:PrivateKeyFileName")));
+                    var decryptNewPassword = this.DecodeString(encryptNewPassword!, PrivateKeyFilePath(this._parametersRepository.GetParameter<string>("ENCRYPTION", "PRIVATEKEYFILENAME")));
+                    Regex validateGuidRegex = new Regex("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[.#?!@$%^&*-]).{8,12}$");
+
+                    if (!validateGuidRegex.IsMatch(decryptNewPassword)) throw new Exception("Password no valido.");
+
+                    var userNewHashPassword = HashString.GenerateHashString(decryptNewPassword);
+
+                    userinfo.PASSWORD = userNewHashPassword;
+
+                    this._userRepository.Update(userinfo);
+                    var result = this._userRepository.Save();
+
+                    if (result.Success)
+                    {
+                        return new Response(true, "Cambio de contraseña exitoso.");
+                    }
+
+                    return new Response(false, "No se logro realizar el cambio de contraseña, intentalo nuevamente.");
+                }
+                else
+                {
+
+                    return new Response(false, "La validación no ha sido exitosa");
+                }
+
+
             }
+            catch (Exception ex) {
+
+                this._logger.LogError(ex.Message, ex);
+                if (ex.Message == "Password no valido.")
+                    return new Response(false, ex.Message);
+
+                return new Response(false, "No se logro realizar el cambio de contraseña, intentalo nuevamente.");
+            }           
 
         }
 

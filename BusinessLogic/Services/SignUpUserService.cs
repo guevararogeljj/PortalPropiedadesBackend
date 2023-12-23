@@ -66,9 +66,7 @@ namespace BusinessLogic.Services
                 var decryptpassword = this.DecodeString(passwordEncrypt, PrivateKeyFilePath(this._parametersRepository.GetParameter<string>("ENCRYPTION", "PRIVATEKEYFILENAME")));
                 Regex validateGuidRegex = new Regex("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[.#?!@$%^&*-]).{8,12}$");
 
-
-
-                if (!validateGuidRegex.IsMatch(decryptpassword)) throw new Exception("El password no valido.");
+                if (!validateGuidRegex.IsMatch(decryptpassword)) throw new Exception("Password no valido.");
 
                 userObject.PASSWORD = HashString.GenerateHashString(decryptpassword);
                 userObject.CELLPHONE = cellphone;
@@ -80,6 +78,10 @@ namespace BusinessLogic.Services
                 userinfo.LASTNAME2 = lastname2;
 
                 var statusRegistration = _userRepository.GetStatusRegistration(userObject.ID, "SIGNUP");
+                var user =  _userRepository.GetByCellphoneOrEmail(cellphone, email).Result;
+
+                if(user != null) throw new Exception("Usuario ya existe.");
+
                 userObject.TRUSERSTATUSREGISTER.Add(statusRegistration);
                 userObject.TUSERSINFO = userinfo;
 
@@ -124,8 +126,11 @@ namespace BusinessLogic.Services
             {
                 this._logger.LogError(ex.Message, ex);
 
-                if(ex.Message == "El password no valido.")
-                    return new Response(false, "El password no valido.");
+                if(ex.Message == "Password no valido.")
+                    return new Response(false, ex.Message);
+
+                if (ex.Message == "Usuario ya existe.")
+                    return new Response(false, ex.Message);
 
                 return new Response(false, StringResources.signinuserservice_addnewuser_exception);
             }
@@ -211,18 +216,7 @@ namespace BusinessLogic.Services
                 this._logger.LogError(ex.Message, ex);
                 return new Response(false, StringResources.signinuserservice_sendcodesms_exception);
             }
-        }
-
-        //private async Task<string> SendCodeCellphone(string? cellphone)
-        //{
-        //    var dic = new Dictionary<string, object>();
-        //    dic.Add("method", "post");
-        //    dic.Add("action", "otp_fina");
-
-        //    var body = UrlRequests.CreateSmsBodyRequestJson(cellphone, this._configuration.GetValue<string>("OTPServices:Message"), this._configuration.GetValue<int>("OTPServices:DigitsNumber"));
-        //    var response = await UrlRequests.PostApiJsonRequest(this._configuration.GetValue<string>("OTPServices:MessengingService"), body, dic);
-        //    return response;
-        //}
+        }        
 
         public async Task<Object> ValidateSmsCode(Dictionary<string, object> user)
         {

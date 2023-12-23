@@ -123,5 +123,18 @@ namespace DataSource.Repositories
             //return await this._dbset.Include(x => x.TUSERSINFO)
                 //.Where(x => x.EMAIL!.Equals(entity.EMAIL!) || x.CELLPHONE!.Equals(entity.CELLPHONE!)).FirstOrDefaultAsync();
         }
+
+        public async Task<TUSERS?> GetByCellphoneOrEmail(string? cell, string? email)
+        {
+            var data = new TUSERS();
+
+            if (cell != null)            
+                data = await this._dbset.Where(x => x.CELLPHONE == cell).FirstOrDefaultAsync();
+
+            if (data is null && email != null)
+                data = await this._dbset.Where(x => x.EMAIL == email).FirstOrDefaultAsync();
+
+            return data;            
+        }
     }
 }
