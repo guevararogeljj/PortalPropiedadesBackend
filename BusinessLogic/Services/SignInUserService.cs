@@ -174,7 +174,7 @@ namespace BusinessLogic.Services
             return Encoding.UTF8.GetString(bytes);
         }
 
-        public async Task<Response> Profile(Dictionary<string, object> credentials, string token)
+        public async Task<Response> Profile(Dictionary<string, object> credentials)
         {
             try
             {
@@ -185,9 +185,7 @@ namespace BusinessLogic.Services
                 if (userinfo == null || userinfo.TUSERSINFO == null)
                 {
                     return new Response(false, "No se encontro información del perfil");
-                }
-
-                if (token != userinfo.TOKEN) throw new Exception("Usuario no autorizado");
+                }                
 
                 var result = new
                 {
