@@ -14,13 +14,11 @@ namespace backend_marketplace.Models
         [MinLength(3)]
         [RegularExpression(@"^[a-zA-Z a-zÑñ\s]+$")]
         [JsonPropertyName("fullname")]
-        [StringLength(50, ErrorMessage = "Nombre demasiado largo, 50 caracteres maximo")]
-        public string? Fullname { get => fullname!.Trim(); set => fullname = value; }
+        public string? Fullname { get => fullname.Trim(); set => fullname = value; }
 
         [Required]
         [RegularExpression(@"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$")]
         [EmailAddress]
-        [StringLength(50, ErrorMessage = "Email demasiado largo, 50 caracteres maximo")]
         [JsonPropertyName("email")]
         public string? Email { get => email; set => email = value; }
 
@@ -29,7 +27,7 @@ namespace backend_marketplace.Models
         [DataType(DataType.PhoneNumber)]
         [MinLength(10)]
         [JsonPropertyName("cellphone")]
-        public string? Cellphone { get => cellphone!.Trim(); set => cellphone = value; }
+        public string? Cellphone { get => cellphone.Trim(); set => cellphone = value; }
 
         [Required]
         [RegularExpression(@"[a-zA-z0-9-ZñÑáéíóúÁÉÍÓÚ\s]+")]
