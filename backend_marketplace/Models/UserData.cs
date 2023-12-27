@@ -11,7 +11,7 @@ namespace backend_marketplace.Models
 
         [JsonPropertyName("names")]
         [Required]
-        [StringLength(50)]
+        [StringLength(50, ErrorMessage = "Nombre demasiado largo, 50 caracteres maximo")]
 
         public string? Names { get; set; } = string.Empty;
 
