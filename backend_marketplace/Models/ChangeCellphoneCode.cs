@@ -13,12 +13,14 @@ namespace backend_marketplace.Models
 
         [Required]
         [JsonPropertyName("cellphone")]
+        [StringLength(10, ErrorMessage = "Celular demasiado largo, 10 caracteres maximo")]
         [RegularExpression(@"^([0-9]{10})$")]
         public string Cellphone { get; set; }
 
         [Required]
         [JsonPropertyName("newcellphone")]
         [RegularExpression(@"^([0-9]{10})$")]
+        [StringLength(10, ErrorMessage = "Celular demasiado largo, 10 caracteres maximo")]
         public string NewCellphone { get; set; }
 
         [JsonPropertyName("code")]

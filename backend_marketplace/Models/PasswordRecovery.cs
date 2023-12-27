@@ -19,6 +19,7 @@ namespace backend_marketplace.Models
         [JsonPropertyName("code")]
         public string Code { get; set; }
 
+        [StringLength(10, ErrorMessage = "Celular demasiado largo, 10 caracteres maximo")]
         [JsonPropertyName("cellphone")]
         [Required]
         //[Phone]

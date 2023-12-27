@@ -9,6 +9,7 @@ namespace backend_marketplace.Models
         //[Required]
         //[RegularExpression(@"^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$")]
         //public string Email { get; set; }
+        [StringLength(10, ErrorMessage = "Celular demasiado largo, 10 caracteres maximo")]
         [JsonPropertyName("cellphone")]
         [Required]
         [Phone]

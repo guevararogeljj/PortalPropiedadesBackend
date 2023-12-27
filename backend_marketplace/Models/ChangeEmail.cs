@@ -8,6 +8,7 @@ namespace backend_marketplace.Models
         [Required]
         [RegularExpression(@"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$", ErrorMessage = "Formato de correo incorrecto")]
         [EmailAddress]
+        [StringLength(50, ErrorMessage = "Email demasiado largo, 50 caracteres maximo")]
         [JsonPropertyName("email")]
         public string Email { get; set; }
 

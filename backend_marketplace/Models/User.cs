@@ -12,6 +12,7 @@ namespace backend_marketplace.Models
         private string? password;
         private string? cellphone;
 
+        [StringLength(50, ErrorMessage = "email demasiado largo, 50 caracteres maximo")]
         [JsonPropertyName("email")]
         [Required]
         [EmailAddress]
@@ -42,6 +43,7 @@ namespace backend_marketplace.Models
         //[RegularExpression(@"^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,12}$")]
         public string? Password { get => password; set => password = value; }
 
+        [StringLength(10, ErrorMessage = "Celular demasiado largo, 20 caracteres maximo")]
         [JsonPropertyName("cellphone")]
         [Required]
         [Phone]

@@ -9,6 +9,7 @@ namespace backend_marketplace.Models
         [RegularExpression(@"^([0-9]{4})$")]
         public string? Code { get; set; }
         //[RegularExpression(@"\d{10}$")]
+        [StringLength(10, ErrorMessage = "Celular demasiado largo, 10 caracteres maximo")]
         [JsonPropertyName("cellphone")]
         public string? Cellphone { get; set; }
     }

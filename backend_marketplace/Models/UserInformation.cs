@@ -11,19 +11,19 @@ namespace backend_marketplace.Models
 
         [JsonPropertyName("names")]
         [Required]
-        [StringLength(50)]
+        [StringLength(50, ErrorMessage = "Nombre demasiado largo, 50 caracteres maximo")]
         [RegularExpression(@"[a-zñA-ZÑ]+$")]
         public string? Names { get; set; }
 
         [JsonPropertyName("lastname")]
         [Required]
-        [StringLength(50)]
+        [StringLength(50, ErrorMessage = "Apellido demasiado largo, 50 caracteres maximo")]
         [RegularExpression(@"[a-zñA-ZÑ]+$")]
         public string? Lastname { get; set; }
 
         [JsonPropertyName("lastname2")]
         [Required]
-        [StringLength(50)]
+        [StringLength(50, ErrorMessage = "Apellido demasiado largo, 50 caracteres maximo")]
         [RegularExpression(@"[a-zñA-ZÑ]+$")]
         public string? Lastname2 { get; set; }
 
