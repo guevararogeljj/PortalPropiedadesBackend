@@ -1,7 +1,9 @@
 ﻿using backend_marketplace.Models;
 using BusinessLogic.Contracts;
+using DataSource.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 using System.Security.Claims;
 
 namespace backend_marketplace.Controllers
@@ -32,9 +34,32 @@ namespace backend_marketplace.Controllers
             }
 
             var result = await this._signInUserService.SignIn(login.ToDictionary());
-            this._logger.LogInformation($"Acceso exitoso de usuario {login.Cellphone}");
 
-            return new JsonResult(result);
+            if (result.Success!.Value)
+            {
+                this._logger.LogInformation($"Acceso exitoso de usuario {login.Cellphone}");
+                return new JsonResult(result);
+            }
+            else
+            {
+                if (result.Message!.Contains("Usuario/contraseña invalida"))
+                {
+                    return StatusCode(StatusCodes.Status404NotFound, result);
+                }
+                else if (result.Message!.Contains("Ha exedido el numero de intentos intente mas tarde"))
+                {
+                    return StatusCode(StatusCodes.Status400BadRequest, result);
+                }
+                else if(result.Message!.Contains("Este usuario no fue validado, por favor intenta recuperar tu contraseña"))
+                {
+                    return StatusCode(StatusCodes.Status400BadRequest, result);
+                }
+                else
+                {
+                    return StatusCode(StatusCodes.Status500InternalServerError, result);
+                }
+            }
+
         }
 
         [HttpPost("logout")]
@@ -533,7 +558,23 @@ namespace backend_marketplace.Controllers
                     throw new Exception("No autorizado");
 
                 var result = await this._signInUserService.UpdateDataUser(data.ToDictionary());
-
+                if (result.Success!.Value)
+                    this._logger.LogInformation($"Se actualizaron datos de {data.Cellphone}");
+                else
+                {
+                    if (result.Message!.Contains("Informacion no valida"))
+                    {
+                        return StatusCode(StatusCodes.Status404NotFound, result);
+                    }
+                    else if (result.Message!.Contains("Ha ocurrido un error al actualizar datos al guardar."))
+                    {
+                        return StatusCode(StatusCodes.Status400BadRequest, result);
+                    }
+                    else
+                    {
+                        return StatusCode(StatusCodes.Status500InternalServerError, result);
+                    }
+                }
                 return new JsonResult(result);
             }
             catch (Exception ex) 
