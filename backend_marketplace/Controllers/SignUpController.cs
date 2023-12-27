@@ -2,6 +2,7 @@
 using BusinessLogic.Contracts;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using System.Text.Json;
 using File = backend_marketplace.Models.File;
 
@@ -215,17 +216,29 @@ namespace backend_marketplace.Controllers
         [HttpPost("sendcodeemail")]
         public async Task<IActionResult> SendCodeEmail(Logout data)
         {
-            if (!ModelState.IsValid)
-            {
-                IEnumerable<string> errors = Errors();
-                return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
+            try {
+
+                if (!ModelState.IsValid)
+                {
+                    IEnumerable<string> errors = Errors();
+                    return new JsonResult(errors) { StatusCode = StatusCodes.Status406NotAcceptable };
+                }
+
+                //await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
+                var cellClaimValue = HttpContext.User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.MobilePhone)?.Value;
+
+                if (data.Cellphone != cellClaimValue)
+                    throw new Exception("No autorizado");
+
+                var result = _signUpUserService.SendCodeEmail(data.ToDictionary());
+
+                return new JsonResult(result.Result);
             }
-
-            //await ValidateAntiforgeryToken(HttpContext, _configuration["JwtForm:HeaderName"], _jwtservice);
-
-            var result = _signUpUserService.SendCodeEmail(data.ToDictionary());
-
-            return new JsonResult(result.Result);
+            catch (Exception ex)
+            {
+               return Unauthorized();
+            }
+            
         }
 
         [HttpPost("sendpasswordrecovery")]
